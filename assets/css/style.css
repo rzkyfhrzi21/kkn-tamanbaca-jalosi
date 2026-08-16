@@ -1,0 +1,76 @@
+/* ============================================================
+   TBM Jalosi Sanak Negeri — Base Stylesheet
+   Design System: "Lo-Fi Craft" / Modern Brutalist
+   ============================================================ */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* --- Base Reset --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #fdf9f3;
+  color: #1c1c18;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overscroll-behavior: none;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1ede7; }
+::-webkit-scrollbar-thumb { background: #d1c4c0; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #7f7571; }
+
+/* --- Focus Visible --- */
+:focus-visible {
+  outline: 2px solid #15803D;
+  outline-offset: 2px;
+}
+
+/* --- Material Symbols --- */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* --- Component Loading State --- */
+[data-component]:empty {
+  display: block;
+  min-height: 1px;
+}
+
+/* --- Navbar Active Link --- */
+nav a.nav-active,
+aside a.nav-active {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+
+/* --- Hard Shadow Utility (Design System) --- */
+.shadow-hard-sm  { box-shadow: 2px 2px 0px 0px #000101; }
+.shadow-hard-md  { box-shadow: 4px 4px 0px 0px #000101; }
+.shadow-hard-lg  { box-shadow: 6px 6px 0px 0px #000101; }
+.shadow-hard-xl  { box-shadow: 8px 8px 0px 0px #000101; }
+.shadow-hard-accent { box-shadow: 4px 4px 0px 0px #fe932c; }
+
+/* --- Page Transition --- */
+body { opacity: 1; transition: opacity 0.15s ease; }
+body.page-loading { opacity: 0; }
+
+/* --- Print --- */
+@media print {
+  nav, footer, [data-component="navbar"], [data-component="footer"] { display: none !important; }
+  body { background: #fff; color: #000; }
+}

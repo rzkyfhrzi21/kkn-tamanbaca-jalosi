@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none">
+  <!-- Book icon -->
+  <rect x="4" y="8" width="22" height="24" rx="2" fill="#2b2523" />
+  <rect x="7" y="11" width="4" height="18" rx="1" fill="#fe932c" />
+  <line x1="4" y1="20" x2="26" y2="20" stroke="#fdf9f3" stroke-width="0.5" opacity="0.3"/>
+  <rect x="5.5" y="9.5" width="19" height="21" rx="1.5" stroke="#fdf9f3" stroke-width="0.5" opacity="0.2"/>
+  <!-- Brand text -->
+  <text x="32" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#2b2523" letter-spacing="-0.3">TBM JALOSI</text>
+  <text x="32" y="30" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="500" fill="#7f7571" letter-spacing="0.5">SANAK NEGERI</text>
+  <!-- Green sticker dot -->
+  <circle cx="115" cy="8" r="4" fill="#15803D"/>
+</svg>

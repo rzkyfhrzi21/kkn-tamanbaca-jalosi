@@ -1,0 +1,97 @@
+# Menonaktifkan directory listing
+Options -Indexes
+
+RewriteEngine On
+
+# ─────────────────────────────────────────────
+# 1. Redirect URL berakhiran .php atau .html ke Clean URL
+# ─────────────────────────────────────────────
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.(php|html)[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# ─────────────────────────────────────────────
+# 2. Routing Root '/' ke Landing Page
+# ─────────────────────────────────────────────
+RewriteRule ^$ landing/index.php [L]
+
+# ─────────────────────────────────────────────
+# 3. Routing Area Dashboard (/dashboard atau /dashboard/xxx)
+# ─────────────────────────────────────────────
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/dashboard/$1.php -f
+RewriteRule ^dashboard/(.+)$ dashboard/$1.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/dashboard/index.php -f
+RewriteRule ^dashboard/?$ dashboard/index.php [L]
+
+# ─────────────────────────────────────────────
+# 4. Routing Area Landing (/xxx -> landing/xxx.php)
+# ─────────────────────────────────────────────
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/landing/$1.php -f
+RewriteRule ^(.+)$ landing/$1.php [L]
+
+# ─────────────────────────────────────────────
+# 5. Fallback: file .php langsung di root
+# ─────────────────────────────────────────────
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# ─────────────────────────────────────────────
+# 6. Blokir akses ke folder/file sensitif
+# ─────────────────────────────────────────────
+RewriteRule ^(docs|@agents|Zzz|\.git|\.rtk)(/|$) - [F,L]
+
+<FilesMatch "\.(md|txt|log|json|env|sql)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^(init-stitch\.txt)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^\.">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>
+
+# ─────────────────────────────────────────────
+# 7. Kompresi GZIP
+# ─────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# ─────────────────────────────────────────────
+# 8. Security Headers
+# ─────────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# ─────────────────────────────────────────────
+# 9. Cache untuk aset statis
+# ─────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresDefault "access plus 2 days"
+</IfModule>
+
+<LimitExcept GET POST HEAD>
+  Deny from all
+</LimitExcept>
