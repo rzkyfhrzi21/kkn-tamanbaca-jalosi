@@ -117,7 +117,7 @@ Lampung 35384
 <p class="font-body-sm text-body-sm text-surface-variant">
               Bantu kami memilah, mendata, dan menata buku-buku donasi yang masuk. Tangan-tangan terampil sangat dibutuhkan!
             </p>
-<button class="w-full bg-primary text-on-primary font-label-mono text-label-mono py-3 px-6 uppercase tracking-wider border border-transparent hover:bg-transparent hover:border-outline hover:text-on-error transition-all flex items-center justify-center gap-2 relative">
+<button class="w-full bg-primary text-on-primary font-handwriting text-label-mono py-3 px-6 uppercase tracking-wider border border-transparent hover:bg-transparent hover:border-outline hover:text-on-error transition-all flex items-center justify-center gap-2 relative">
                Daftar Sekarang
                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </button>

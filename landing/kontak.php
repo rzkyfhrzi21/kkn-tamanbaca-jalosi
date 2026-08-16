@@ -25,11 +25,11 @@ include __DIR__ . '/../components/head.php';
           Temukan lokasi kami, lihat jadwal operasional, dan jangan ragu untuk menghubungi kami jika ada pertanyaan. Kami senang menyambut Anda.
         </p>
 <div class="flex flex-wrap gap-4 pt-4">
-<a class="group flex items-center gap-2 bg-deep-black text-footer-bg border-2 border-deep-black hover:bg-transparent hover:text-deep-black transition-all px-6 py-3 font-label-mono uppercase tracking-widest shadow-[4px_4px_0px_0px_#C1AF91]" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<a class="group flex items-center gap-2 bg-deep-black text-footer-bg border-2 border-deep-black hover:bg-transparent hover:text-deep-black transition-all px-6 py-3 font-handwriting uppercase tracking-widest shadow-[4px_4px_0px_0px_#C1AF91]" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-xl group-hover:animate-bounce">chat</span>
 <span>WhatsApp</span>
 </a>
-<a class="group flex items-center gap-2 bg-transparent text-deep-black border-2 border-deep-black hover:bg-primary-container hover:border-primary-container transition-all px-6 py-3 font-label-mono uppercase tracking-widest shadow-[4px_4px_0px_0px_#000101]" href="mailto:info@jalosisanak.org">
+<a class="group flex items-center gap-2 bg-transparent text-deep-black border-2 border-deep-black hover:bg-primary-container hover:border-primary-container transition-all px-6 py-3 font-handwriting uppercase tracking-widest shadow-[4px_4px_0px_0px_#000101]" href="mailto:info@jalosisanak.org">
 <span class="material-symbols-outlined text-xl">mail</span>
 <span>Email Kami</span>
 </a>
@@ -90,7 +90,7 @@ include __DIR__ . '/../components/head.php';
                     Kec. Air Naningan, Kab. Tanggamus,<br/>
                     Lampung 35384
                 </p>
-<button class="flex items-center gap-2 font-label-mono text-sm text-primary hover:text-deep-black transition-colors group">
+<button class="flex items-center gap-2 font-handwriting text-sm text-primary hover:text-deep-black transition-colors group">
 <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">content_copy</span>
 <span class="uppercase border-b border-primary group-hover:border-deep-black pb-0.5">Salin Alamat</span>
 </button>

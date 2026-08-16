@@ -28,7 +28,7 @@ include __DIR__ . '/../components/head.php';
 <div class="flex items-center bg-surface-container-lowest border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] group-focus-within:translate-x-[2px] group-focus-within:translate-y-[2px] group-focus-within:shadow-[2px_2px_0px_0px_#000101] transition-all">
 <span class="material-symbols-outlined text-deep-black px-4">search</span>
 <input class="w-full bg-transparent py-4 pr-4 font-body-lg text-deep-black outline-none placeholder:text-on-surface-variant/50" id="search-book" placeholder="Judul, Penulis, ISBN..." type="text"/>
-<button class="bg-primary text-on-primary px-6 py-4 border-l-2 border-deep-black font-label-mono uppercase hover:bg-surface-tint transition-colors">Cari</button>
+<button class="bg-primary text-on-primary px-6 py-4 border-l-2 border-deep-black font-handwriting uppercase hover:bg-surface-tint transition-colors">Cari</button>
 </div>
 </div>
 </div>
@@ -54,12 +54,12 @@ include __DIR__ . '/../components/head.php';
 <button class="font-label-mono text-xs text-deep-black underline underline-offset-4 hover:text-primary transition-colors">Reset Filter</button>
 </div>
 <div class="flex flex-wrap gap-3">
-<button class="bg-deep-black text-surface-container-lowest font-label-mono uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_rgba(0,1,1,0.2)]">Semua</button>
-<button class="bg-surface-container-lowest text-deep-black font-label-mono uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Anak-anak</button>
-<button class="bg-surface-container-lowest text-deep-black font-label-mono uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Pelajaran</button>
-<button class="bg-surface-container-lowest text-deep-black font-label-mono uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Sains & Alam</button>
-<button class="bg-surface-container-lowest text-deep-black font-label-mono uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Sastra</button>
-<button class="bg-surface-container-lowest text-deep-black font-label-mono uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Sejarah</button>
+<button class="bg-deep-black text-surface-container-lowest font-handwriting uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_rgba(0,1,1,0.2)]">Semua</button>
+<button class="bg-surface-container-lowest text-deep-black font-handwriting uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Anak-anak</button>
+<button class="bg-surface-container-lowest text-deep-black font-handwriting uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Pelajaran</button>
+<button class="bg-surface-container-lowest text-deep-black font-handwriting uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Sains & Alam</button>
+<button class="bg-surface-container-lowest text-deep-black font-handwriting uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Sastra</button>
+<button class="bg-surface-container-lowest text-deep-black font-handwriting uppercase text-sm px-5 py-2 border-2 border-deep-black shadow-[2px_2px_0px_0px_#000101] hover:bg-primary-fixed transition-colors hover:-translate-y-1">Sejarah</button>
 </div>
 </div>
 <!-- Toolbar -->

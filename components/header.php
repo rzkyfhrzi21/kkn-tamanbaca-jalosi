@@ -36,7 +36,7 @@ $_nav_items = [
       ?>
         <a
           href="<?= htmlspecialchars($_item['href']) ?>"
-          class="font-label-mono transition-colors uppercase <?= $_is_active ? 'text-footer-bg underline underline-offset-8 decoration-2' : 'text-footer-bg' ?>"
+          class="font-handwriting transition-colors uppercase <?= $_is_active ? 'text-footer-bg underline underline-offset-8 decoration-2' : 'text-footer-bg' ?>"
           <?= $_is_active ? 'aria-current="page"' : '' ?>
         ><?= htmlspecialchars($_item['label']) ?></a>
       <?php endforeach; ?>
@@ -47,7 +47,7 @@ $_nav_items = [
   </div>
 </header>
 <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden bg-putih overflow-y-auto">
-  <nav class="min-h-full w-full flex flex-col items-center justify-center gap-8 px-margin-mobile py-24 font-label-mono text-label-mono uppercase" aria-label="Navigasi Mobile">
+  <nav class="min-h-full w-full flex flex-col items-start justify-center gap-8 px-margin-mobile py-24 font-handwriting text-label-mono uppercase" aria-label="Navigasi Mobile">
     <?php foreach ($_nav_items as $_item):
       $_is_active = ($_item['slug'] === $page_active);
     ?>

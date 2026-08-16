@@ -2,7 +2,7 @@
 .grok/
 .rtk/
 @agents/
-docs/
+# docs/
 Zzz/
 CLAUDE.md
 GEMINI.md

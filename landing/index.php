@@ -27,10 +27,10 @@ include __DIR__ . '/../components/head.php';
           Tempat berkumpul, bercerita, dan tumbuh bersama di Pekon Air Kubang. Menyemai benih pengetahuan dari desa untuk dunia.
         </p>
         <div class="flex items-center gap-4 flex-wrap">
-          <a class="bg-primary text-on-primary font-label-mono text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all duration-200" href="donasi">
+          <a class="bg-primary text-on-primary font-handwriting text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all duration-200" href="donasi">
             Dukung Kami
           </a>
-          <a class="font-label-mono text-label-mono text-deep-black uppercase tracking-wider border-2 border-deep-black px-6 py-3 hover:bg-sticker-green transition-colors" href="program">
+          <a class="font-handwriting text-label-mono text-deep-black uppercase tracking-wider border-2 border-deep-black px-6 py-3 hover:bg-sticker-green transition-colors" href="program">
             Lihat Program
           </a>
         </div>
@@ -50,10 +50,12 @@ include __DIR__ . '/../components/head.php';
 <!-- Kata Pendiri -->
 <section class="w-full bg-primary-fixed py-20 border-b-2 border-deep-black">
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-2 border-deep-black pb-4">
-      <h2 class="font-headline-md text-headline-md text-deep-black uppercase">Kata Pendiri</h2>
-      <span class="font-label-mono text-label-mono text-on-primary-fixed-variant">[ DARI HATI, UNTUK KAMPUNG ]</span>
-    </div>
+    <?php
+    $section_title = 'Kata Pendiri';
+    $section_kicker = 'DARI HATI, UNTUK KAMPUNG';
+    $section_kicker_class = 'text-on-primary-fixed-variant';
+    include __DIR__ . '/../components/section-header.php';
+    ?>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
       <div class="bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between">
         <div>
@@ -96,10 +98,11 @@ include __DIR__ . '/../components/head.php';
 <!-- Pilar Program -->
 <section class="w-full bg-surface py-20 border-b-2 border-deep-black">
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-2 border-deep-black pb-4">
-      <h2 class="font-headline-md text-headline-md text-deep-black uppercase">4 Pilar Program</h2>
-      <span class="font-label-mono text-label-mono text-on-surface-variant hidden md:block">[ LITERASI UNTUK SEMUA ]</span>
-    </div>
+    <?php
+    $section_title = '4 Pilar Program';
+    $section_kicker = 'LITERASI UNTUK SEMUA';
+    include __DIR__ . '/../components/section-header.php';
+    ?>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="bg-surface-variant border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-6 flex flex-col group hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#000101] transition-all">
         <div class="w-12 h-12 bg-primary border border-deep-black flex items-center justify-center rounded-full mb-6 text-on-primary shadow-[2px_2px_0px_0px_#000101]">
@@ -139,19 +142,22 @@ include __DIR__ . '/../components/head.php';
       </div>
     </div>
     <div class="mt-12 flex justify-center">
-      <a class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-mono text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="program">
-        [ DETAIL PROGRAM &rarr; ]
-      </a>
+      <?php
+      $btn_href = 'program';
+      $btn_text = '[ DETAIL PROGRAM &rarr; ]';
+      include __DIR__ . '/../components/btn-primary.php';
+      ?>
     </div>
   </div>
 </section>
 <!-- Katalog Teaser -->
 <section class="w-full bg-surface py-20 border-b-2 border-deep-black">
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-2 border-deep-black pb-4">
-      <h2 class="font-headline-md text-headline-md text-deep-black uppercase">Sorotan Koleksi</h2>
-      <span class="font-label-mono text-label-mono text-on-surface-variant hidden md:block">[ KOLEKSI PILIHAN ]</span>
-    </div>
+    <?php
+    $section_title = 'Sorotan Koleksi';
+    $section_kicker = 'KOLEKSI PILIHAN';
+    include __DIR__ . '/../components/section-header.php';
+    ?>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
       <div class="group relative">
         <div class="aspect-[3/4] bg-surface-container-highest border-2 border-deep-black mb-4 shadow-[4px_4px_0px_0px_#000101] overflow-hidden">
@@ -191,9 +197,11 @@ include __DIR__ . '/../components/head.php';
       </div>
     </div>
     <div class="mt-12 flex justify-center border-t-2 border-deep-black/10 pt-12">
-      <a class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-mono text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="katalog">
-        [ BUKA KATALOG LENGKAP (1.500+ BUKU) &rarr; ]
-      </a>
+      <?php
+      $btn_href = 'katalog';
+      $btn_text = '[ BUKA KATALOG LENGKAP (1.500+ BUKU) &rarr; ]';
+      include __DIR__ . '/../components/btn-primary.php';
+      ?>
     </div>
   </div>
 </section>
@@ -225,7 +233,7 @@ include __DIR__ . '/../components/head.php';
         <div class="inline-block px-3 py-1 bg-sticker-green text-deep-black border-2 border-deep-black font-label-stamp text-[10px] uppercase mb-4 shadow-[2px_2px_0px_0px_#000101]">
           Menerima Buku Bekas Layak Baca
         </div>
-        <a class="block w-full text-center bg-primary text-on-primary font-label-mono text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="donasi">
+        <a class="block w-full text-center bg-primary text-on-primary font-handwriting text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="donasi">
           [ PANDUAN DONASI &amp; RELAWAN &rarr; ]
         </a>
       </div>

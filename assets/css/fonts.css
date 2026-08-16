@@ -1,0 +1,37 @@
+/* ============================================================
+   Font faces Tuku (self-hosted)
+   Sumber: docs/Toko Kopi Tuku.html (next/font local assets tuku.coffee)
+   - __tuku_sub_head_6d0d6c    -> tuku-sub-head.otf  (font utama / body)
+   - __tuku_handwriting_c420db -> tuku-handwriting.woff (font display / handwriting)
+   Fallback = local Arial + metric override dari referensi.
+   ============================================================ */
+@font-face {
+  font-family: '__tuku_sub_head_6d0d6c';
+  src: url('../fonts/tuku-sub-head.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: '__tuku_sub_head_Fallback_6d0d6c';
+  src: local('Arial');
+  ascent-override: 60.65%;
+  descent-override: 24.26%;
+  line-gap-override: 0.00%;
+  size-adjust: 140.15%;
+}
+@font-face {
+  font-family: '__tuku_handwriting_c420db';
+  src: url('../fonts/tuku-handwriting.woff') format('woff');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: '__tuku_handwriting_Fallback_c420db';
+  src: local('Arial');
+  ascent-override: 103.67%;
+  descent-override: 91.35%;
+  line-gap-override: 0.00%;
+  size-adjust: 102.25%;
+}

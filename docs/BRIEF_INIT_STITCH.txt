@@ -1,0 +1,260 @@
+================================================================================
+PROMPT MASTER: INISIALISASI & KONVERSI DESAIN GOOGLE STITCH KE WEB SIAP PAKAI
+(Pure HTML/JS/CSS + Clean URLs via .htaccess + Modular Components)
+================================================================================
+
+[STANDAR LOKASI FOLDER STITCH]:
+Setiap kali mengekspor desain dari Google Stitch, selalu letakkan folder hasil export di:
+`docs/STITCH/` (Contoh: `docs/STITCH/beranda_tbm/...`, `docs/STITCH/katalog_buku/...`, dsb)
+
+[CARA PENGGUNAAN]:
+Salin seluruh teks prompt di bawah garis pemisah ke AI (Claude / Gemini / Cursor / Antigravity)
+di setiap proyek baru. Anda cukup menyesuaikan nama/path proyek jika diperlukan.
+
+--------------------------------- SALIN DARI SINI ---------------------------------
+
+start @[PROJECT_PATH\AGENTS.md]
+
+Tolong lakukan inisialisasi dan konversi menyeluruh dari seluruh aset desain Google Stitch yang tersimpan di folder standar @[PROJECT_PATH\docs\STITCH] menjadi website statis murni (Pure HTML, Tailwind CSS, & Vanilla JS) yang modular, siap pakai, berstruktur rapi, dan seluruh fungsi navigasinya bekerja 100%.
+
+Ikuti instruksi arsitektur, pemisahan folder, URL routing, dan modularisasi komponen berikut secara detail:
+
+================================================================================
+1. STANDAR STRUKTUR FOLDER & ARSITEKTUR WEBSITE
+================================================================================
+Pindai dan baca seluruh subfolder di dalam `docs/STITCH/` (yang berisi `code.html`, `screen.png`, dan file spesifikasi Stitch), lalu susun dan distribusikan ke struktur project bersih berikut:
+
+Root Project /
+├── .htaccess                     # Konfigurasi Apache: Clean URL (tanpa .html), Gzip, Security Headers
+├── index.html                    # Entry point utama (dapat me-redirect atau memuat landing/index.html)
+├── landing/                      # Seluruh Halaman Utama / Publik / Landing Page
+│   ├── index.html                # Beranda (Home)
+│   ├── tentang.html              # Halaman Tentang Kami
+│   ├── program.html              # Halaman Program / Layanan / Jadwal
+│   ├── katalog.html              # Halaman Katalog / Galeri / Produk
+│   ├── kontak.html               # Halaman Kontak & Lokasi
+│   ├── login.html                # Halaman Login / Autentikasi (jika ada di desain)
+│   └── [halaman_publik_lain].html
+├── dashboard/                    # Area Khusus Dashboard / Admin / User Portal (JIKA ADA DI STITCH)
+│   ├── index.html                # Overview Dashboard
+│   ├── profil.html               # Profil Pengguna / Pengaturan
+│   ├── [modul_admin].html        # Modul data, tabel, form input admin
+│   └── ...
+├── components/                   # Komponen HTML Reusable (Header, Nav, Footer, Sidebar, Modal)
+│   ├── header.html               # Topbar / Header publik
+│   ├── navbar.html               # Navigasi utama publik (desktop + drawer mobile)
+│   ├── footer.html               # Footer publik
+│   ├── sidebar-dashboard.html    # Sidebar navigasi khusus area dashboard
+│   ├── navbar-dashboard.html     # Header/navbar khusus area dashboard
+│   └── modal-*.html              # Modal reusable (konfirmasi hapus, preview gambar, dll)
+├── assets/
+│   ├── css/
+│   │   ├── style.css             # Custom CSS, font definitions, utilities
+│   │   └── tailwind-custom.css   # Custom utility / theme overrides jika diperlukan
+│   ├── js/
+│   │   ├── security-warning.js   # Script peringatan keamanan console (dipindah dari root ke folder ini)
+│   │   ├── components.js         # Engine loader modular komponen HTML + active link detector dinamis
+│   │   ├── main.js               # Script interaksi global (mobile menu toggle, modal, scroll)
+│   │   └── dashboard.js          # Script interaktif khusus dashboard (jika ada)
+│   └── images/                   # Asset gambar lokal (logo, banner, mockup, ikon)
+│       └── ...
+└── docs/STITCH/                  # Folder mentah desain Stitch (hanya sebagai sumber baca)
+
+> **⚠️ ATURAN PEMINDAHAN SECURITY-WARNING:**
+> Jika file `security-warning.js` ditemukan berada di root project, AI **WAJIB memindahkannya** ke `assets/js/security-warning.js` agar root folder tetap bersih dan terorganisir.
+
+
+================================================================================
+2. MODULARISASI KOMPONEN PURE HTML & INKLUSI SCRIPT WAJIB
+================================================================================
+Karena website dibuat murni HTML (tanpa server-side include PHP `<?php include ... ?>`), terapkan sistem Component Loader Vanilla JS yang ringan, andal, dan modular:
+
+1. **Ekstraksi Komponen ke `components/`**:
+   - Pisahkan bagian `<header>`, `<nav>`, `<footer>`, dan `<aside>` (sidebar dashboard) dari file Stitch ke file masing-masing di folder `components/`.
+   - Bersihkan tag pembungkus ganda agar komponen siap di-inject.
+
+2. **Placeholder Tag & Inklusi Script Wajib di Halaman HTML**:
+   Pada setiap file HTML (baik di `landing/`, `dashboard/`, `login.html`, maupun `index.html`), gunakan struktur tag dan script standar berikut:
+   ```html
+   <!-- Header & Navigasi -->
+   <div data-component="header"></div>
+   <div data-component="navbar"></div>
+
+   <!-- Konten Utama Halaman -->
+   <main>
+     ...
+   </main>
+
+   <!-- Footer -->
+   <div data-component="footer"></div>
+
+   <!-- Script Wajib & Loader -->
+   <script src="/assets/js/security-warning.js"></script>
+   <script src="/assets/js/components.js"></script>
+   <script src="/assets/js/main.js"></script>
+   ```
+
+   > **⚠️ CATATAN WAJIB KEAMANAN:**
+   > File `/assets/js/security-warning.js` **WAJIB di-include** pada:
+   > 1. Seluruh halaman Landing / Publik (`landing/*.html`)
+   > 2. Halaman Login / Registrasi / Auth (`login.html` / `landing/login.html`)
+   > 3. Seluruh halaman Dashboard / Admin (`dashboard/*.html`)
+   > 4. Halaman Root (`index.html`)
+
+3. **Engine Loader Komponen & Deteksi Menu Aktif Dinamis (`assets/js/components.js`)**:
+   Implementasikan script loader mandiri yang secara otomatis mengaktifkan menu yang sesuai dengan URL halaman saat ini:
+   ```javascript
+   document.addEventListener("DOMContentLoaded", async () => {
+     // 1. Muat seluruh komponen HTML secara asinkron
+     const componentElements = document.querySelectorAll("[data-component]");
+     for (const el of componentElements) {
+       const name = el.getAttribute("data-component");
+       try {
+         const res = await fetch(`/components/${name}.html`);
+         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+         const html = await res.text();
+         el.innerHTML = html;
+       } catch (err) {
+         console.error(`Gagal memuat komponen: ${name}`, err);
+       }
+     }
+
+     // 2. DETEKSI MENU AKTIF DINAMIS (Navbar Desktop, Mobile Drawer, Sidebar Dashboard)
+     const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+
+     const navContainers = document.querySelectorAll("nav, aside, #mobile-menu, [data-sidebar]");
+     navContainers.forEach((container) => {
+       // Ambil active classes custom dari atribut data-active-classes (jika ada di Stitch)
+       const activeClasses = (container.getAttribute("data-active-classes") || "text-primary font-bold underline decoration-2 underline-offset-8").split(" ");
+       const inactiveClasses = (container.getAttribute("data-inactive-classes") || "text-on-surface-variant opacity-80").split(" ");
+
+       const links = container.querySelectorAll("a[href]");
+       links.forEach((link) => {
+         const href = link.getAttribute("href").replace(/\/$/, "") || "/";
+         const isHome = (currentPath === "/" || currentPath === "/landing" || currentPath.endsWith("/index.html")) && (href === "/" || href === "/landing");
+         const isMatchingPage = href !== "/" && (currentPath === href || currentPath.startsWith(href + "/"));
+
+         if (isHome || isMatchingPage) {
+           link.setAttribute("aria-current", "page");
+           activeClasses.forEach(cls => cls && link.classList.add(cls));
+           inactiveClasses.forEach(cls => cls && link.classList.remove(cls));
+         } else {
+           link.removeAttribute("aria-current");
+           activeClasses.forEach(cls => cls && link.classList.remove(cls));
+           inactiveClasses.forEach(cls => cls && link.classList.add(cls));
+         }
+       });
+     });
+
+     // 3. Inisialisasi event interaktif Mobile Menu (Hamburger Drawer)
+     const mobileBtn = document.querySelector("#mobile-menu-btn");
+     const mobileMenu = document.querySelector("#mobile-menu");
+     if (mobileBtn && mobileMenu) {
+       mobileBtn.addEventListener("click", () => {
+         mobileMenu.classList.toggle("hidden");
+       });
+     }
+   });
+   ```
+
+
+================================================================================
+3. PERBAIKAN NAVIGASI & CLEAN URL (LINK TANPA `.html`)
+================================================================================
+Perbaiki seluruh atribut link yang diexport dari Stitch:
+1. Ubah semua `href="#"` atau `data-path="..."` menjadi URL bersih:
+   - Link Beranda: `href="/"` atau `href="/landing"`
+   - Link Tentang: `href="/tentang"`
+   - Link Program: `href="/program"`
+   - Link Katalog: `href="/katalog"`
+   - Link Donasi / Aksi: `href="/donasi"`
+   - Link Kontak: `href="/kontak"`
+   - Link Login: `href="/login"`
+   - Link Dashboard: `href="/dashboard"`
+   - Link Modul Dashboard: `href="/dashboard/anggota"`, `href="/dashboard/koleksi"`, dll.
+2. Pastikan tombol Hamburger Mobile Menu berfungsi penuh (buka/tutup drawer mobile saat diklik).
+3. Pastikan link navigasi internal (anchor `#section-id`) melakukan smooth-scroll ke elemen yang dituju.
+
+
+================================================================================
+4. KONFIGURASI `.htaccess` (APACHE / LARAGON / XAMPP / CPANEL)
+================================================================================
+Tulis file `.htaccess` di root folder dengan konfigurasi lengkap:
+```apache
+Options -Indexes
+RewriteEngine On
+
+# 1. Redirect URL berakhiran .html ke Clean URL (tanpa .html)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 2. Routing Root '/' ke Landing Page
+RewriteRule ^$ landing/index.html [L]
+
+# 3. Routing Area Dashboard (/dashboard atau /dashboard/xxx)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/dashboard/$1.html -f
+RewriteRule ^dashboard/(.*)$ dashboard/$1.html [L]
+
+# 4. Routing Area Landing (/xxx)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/landing/$1.html -f
+RewriteRule ^(.*)$ landing/$1.html [L]
+
+# 5. Routing Fallback langsung jika file .html ada di root
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# 6. Kompresi GZIP & Keamanan Header
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# 7. Blokir akses ke folder sensitif
+RewriteRule ^(docs|@agents|Zzz|\.git|\.rtk)(/|$) - [F,L]
+<FilesMatch "\.(md|txt|log|json|env|sql)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^(INIT STITCH\.txt|init-stitch\.txt)$">
+  Require all denied
+</FilesMatch>
+```
+
+
+================================================================================
+5. OPTIMASI TEMA, FONT, & GAMBAR GOOGLE STITCH
+================================================================================
+1. **Font & Icons**:
+   - Pertahankan import Google Fonts yang digunakan Stitch (`Plus Jakarta Sans`, `JetBrains Mono`, `Material Symbols Outlined`, dll) di dalam file CSS utama atau `<head>`.
+2. **Tailwind Config Consolidation**:
+   - Satukan object `tailwind.config = { ... }` dari file-file Stitch ke dalam satu file konfigurasi bersama di `assets/js/tailwind-config.js` atau inject di head agar tidak terjadi duplikasi konfigurasi warna/font di tiap file.
+3. **Pembersihan Asset Gambar**:
+   - Ganti link gambar mentah eksternal Google CDN (`lh3.googleusercontent.com/...`) dengan path lokal di `assets/images/` atau berikan fallback visual yang rapi agar halaman tidak rusak jika offline.
+
+
+================================================================================
+6. VERIFIKASI & QUALITY CHECKLIST
+================================================================================
+Setelah melakukan konversi, AI wajib memverifikasi:
+- [ ] Seluruh folder desain di `docs/STITCH/` telah diproses tanpa ada halaman yang tertinggal.
+- [ ] Menu Navigasi Aktif Dinamis berfungsi 100%: Halaman yang sedang dibuka otomatis ter-highlight sesuai styling aktif (`aria-current="page"`, underline, font-bold, atau background aktif).
+- [ ] Berlaku konsisten untuk Navbar Desktop, Drawer Mobile Menu, dan Sidebar Dashboard.
+- [ ] File `security-warning.js` telah dipindahkan ke `assets/js/security-warning.js` (tidak ada di root project).
+- [ ] File `security-warning.js` telah ter-include di seluruh halaman (`landing/`, `login`, `dashboard/`, dan `index.html`) via `/assets/js/security-warning.js`.
+- [ ] Semua link `<a href="...">` pada Navbar, Footer, Button CTA, dan Sidebar mengarah ke URL bersih yang valid.
+- [ ] Navigasi mobile (hamburger menu) dapat dibuka dan ditutup dengan lancar di layar HP/tablet.
+- [ ] URL tanpa `.html` dapat diakses dengan mulus melalui server Apache / Laragon.
+- [ ] Komponen modular (header, navbar, footer, sidebar) ter-load dengan rapi tanpa layout shifting.
+- [ ] Tampilkan daftar ringkasan URL halaman yang telah dibuat beserta fungsinya.
+
+---------------------------------- SELESAI ----------------------------------

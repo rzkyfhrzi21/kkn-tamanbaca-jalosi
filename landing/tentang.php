@@ -55,10 +55,12 @@ include __DIR__ . '/../components/head.php';
 <!-- Vision & Mission Bento Grid -->
 <section class="w-full bg-primary-fixed py-20 border-b-2 border-deep-black">
 <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-2 border-deep-black pb-4">
-<h2 class="font-headline-md text-headline-md text-deep-black uppercase">Visi & Misi</h2>
-<span class="font-label-mono text-label-mono text-on-primary-fixed-variant">[ MANIFESTO JALOSI ]</span>
-</div>
+<?php
+$section_title = 'Visi & Misi';
+$section_kicker = 'MANIFESTO JALOSI';
+$section_kicker_class = 'text-on-primary-fixed-variant';
+include __DIR__ . '/../components/section-header.php';
+?>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 <!-- Visi Card (Large) -->
 <div class="lg:col-span-2 bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between group hover:-translate-y-1 transition-transform">
