@@ -1,13 +1,21 @@
 /* ============================================================
-   Font faces Tuku (self-hosted)
+   Font faces Tuku (dual-source: local self-hosted + CDN tuku.coffee)
    Sumber: docs/Toko Kopi Tuku.html (next/font local assets tuku.coffee)
    - __tuku_sub_head_6d0d6c    -> tuku-sub-head.otf  (font utama / body)
    - __tuku_handwriting_c420db -> tuku-handwriting.woff (font display / handwriting)
    Fallback = local Arial + metric override dari referensi.
+   CDN (https://www.tuku.coffee/_next/static/media/...) dipakai sbg sumber
+   kedua: CORS terbuka (Access-Control-Allow-Origin: *) + Content-Type
+   font/otf & font/woff, cache immutable 1 tahun.
    ============================================================ */
+
+/* Instruksi klien: semua teks di seluruh halaman KAPITAL. */
+body { text-transform: uppercase; }
+
 @font-face {
   font-family: '__tuku_sub_head_6d0d6c';
-  src: url('../fonts/tuku-sub-head.otf') format('opentype');
+  src: url('../fonts/tuku-sub-head.otf') format('opentype'),
+       url('https://www.tuku.coffee/_next/static/media/8207272fb7fc6346-s.p.otf') format('opentype');
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -22,7 +30,8 @@
 }
 @font-face {
   font-family: '__tuku_handwriting_c420db';
-  src: url('../fonts/tuku-handwriting.woff') format('woff');
+  src: url('../fonts/tuku-handwriting.woff') format('woff'),
+       url('https://www.tuku.coffee/_next/static/media/e5df4e3ee0c98d7c-s.p.woff') format('woff');
   font-display: swap;
   font-style: normal;
   font-weight: 400;
