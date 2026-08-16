@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Program';
-$page_desc = 'Jadwal dan ragam program TAMAN BACA Jalosi Sanak Negeri: membaca, komputer, seni, dan konservasi.';
+$page_desc = 'Ragam program TAMAN BACA Jalosi Sanak Negeri: membaca, komputer, seni, dan konservasi.';
 $page_canonical = '/program';
 $page_active = 'program';
 include __DIR__ . '/../components/head.php';
@@ -21,10 +21,6 @@ include __DIR__ . '/../components/head.php';
 <p class="font-body-lg text-on-surface-variant mb-10 max-w-lg">
             Empat pilar program kami dirancang untuk menumbuhkan keterampilan, kreativitas, dan kesadaran lingkungan bagi anak-anak dan warga desa.
           </p>
-<div class="flex gap-4">
-<a class="inline-flex items-center justify-center bg-surface text-deep-black font-label-stamp px-6 py-3 shadow-[2px_2px_0px_0px_#000101] border border-deep-black hover:bg-surface-variant transition-colors uppercase tracking-widest" href="#jadwal">Lihat Jadwal</a>
-<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-stamp px-6 py-3 shadow-[2px_2px_0px_0px_#000101] border border-deep-black hover:bg-surface-tint transition-colors uppercase tracking-widest" href="#daftar">Daftar Sekarang</a>
-</div>
 </div>
 <div class="relative h-[500px]">
 <div class="absolute inset-0 bg-surface-container border border-deep-black shadow-[4px_4px_0px_0px_#000101] rotate-2"></div>
@@ -88,124 +84,6 @@ include __DIR__ . '/../components/head.php';
 <li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ekspedisi Alam Sekitar</li>
 <li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Kebun Sayur Komunitas</li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section class="w-full bg-surface-container py-24 px-margin-mobile lg:px-margin-desktop border-t border-deep-black relative" id="jadwal">
-<div class="max-w-[1200px] mx-auto">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-<div>
-<div class="flex items-center gap-4 mb-4">
-<span class="font-headline-lg text-outline-variant opacity-50">02</span>
-<h2 class="font-headline-md text-deep-black uppercase">Jadwal Mingguan</h2>
-</div>
-<p class="font-body-lg text-on-surface-variant max-w-2xl">Kegiatan rutin kami terbagi sepanjang minggu. Silakan pilih kelas yang sesuai dengan minat anak.</p>
-</div>
-<div class="inline-flex bg-surface border border-deep-black shadow-[2px_2px_0px_0px_#000101]">
-<button class="px-4 py-2 font-label-stamp text-deep-black hover:bg-surface-variant border-r border-deep-black">PAGI</button>
-<button class="px-4 py-2 font-label-stamp text-on-primary bg-primary border-r border-deep-black">SORE</button>
-</div>
-</div>
-<div class="overflow-x-auto bg-surface border border-deep-black shadow-[4px_4px_0px_0px_#000101]">
-<table class="w-full text-left border-collapse min-w-[800px]">
-<thead>
-<tr class="bg-surface-container-high border-b-2 border-deep-black font-label-stamp text-deep-black uppercase">
-<th class="p-4 border-r border-deep-black w-32">Waktu</th>
-<th class="p-4 border-r border-deep-black">Senin</th>
-<th class="p-4 border-r border-deep-black">Selasa</th>
-<th class="p-4 border-r border-deep-black">Rabu</th>
-<th class="p-4 border-r border-deep-black">Kamis</th>
-<th class="p-4 border-r border-deep-black">Jumat</th>
-<th class="p-4 border-r border-deep-black bg-sticker-green/20">Sabtu</th>
-<th class="p-4 bg-sticker-green/20">Minggu</th>
-</tr>
-</thead>
-<tbody class="font-body-sm text-on-surface">
-<tr class="border-b border-deep-black hover:bg-surface-container transition-colors">
-<td class="p-4 border-r border-deep-black font-label-mono text-sm bg-surface-container-low">14:00 - 15:30</td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Literasi Dasar</span><span class="text-xs text-on-surface-variant">SD Kls 1-3</span></td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Komputer</span><span class="text-xs text-on-surface-variant">Ketik Dasar</span></td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Seni Rupa</span><span class="text-xs text-on-surface-variant">Mewarnai</span></td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Literasi Dasar</span><span class="text-xs text-on-surface-variant">Bercerita</span></td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Konservasi</span><span class="text-xs text-on-surface-variant">Bank Sampah</span></td>
-<td class="p-4 border-r border-deep-black bg-sticker-green/10">-</td>
-<td class="p-4 bg-sticker-green/10">-</td>
-</tr>
-<tr class="border-b border-deep-black hover:bg-surface-container transition-colors">
-<td class="p-4 border-r border-deep-black font-label-mono text-sm bg-surface-container-low">15:30 - 17:00</td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Literasi Lanjut</span><span class="text-xs text-on-surface-variant">SD Kls 4-6</span></td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Komputer IAR</span><span class="text-xs text-on-surface-variant">Internet Aman</span></td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Tari Tradisional</span><span class="text-xs text-on-surface-variant">Grup A</span></td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Tari Tradisional</span><span class="text-xs text-on-surface-variant">Grup B</span></td>
-<td class="p-4 border-r border-deep-black"><span class="block font-bold">Konservasi</span><span class="text-xs text-on-surface-variant">Prakarya</span></td>
-<td class="p-4 border-r border-deep-black bg-sticker-green/10">-</td>
-<td class="p-4 bg-sticker-green/10">-</td>
-</tr>
-<tr class="hover:bg-surface-container transition-colors">
-<td class="p-4 border-r border-deep-black font-label-mono text-sm bg-surface-container-low">09:00 - 12:00</td>
-<td class="p-4 border-r border-deep-black bg-surface-variant/30 text-center" colspan="5"><span class="font-label-stamp text-on-surface-variant">SEKOLAH FORMAL</span></td>
-<td class="p-4 border-r border-deep-black bg-sticker-green/30 relative">
-<span class="block font-bold text-deep-black">Kelas Ekstra</span>
-<span class="text-xs text-deep-black">Bedah Buku / Menulis</span>
-<div class="absolute top-2 right-2 w-2 h-2 bg-deep-black rounded-full"></div>
-</td>
-<td class="p-4 bg-sticker-green/30 relative">
-<span class="block font-bold text-deep-black">Eksplorasi Alam</span>
-<span class="text-xs text-deep-black">Minggu ke-2 & 4</span>
-<div class="absolute top-2 right-2 w-2 h-2 bg-deep-black rounded-full"></div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section class="w-full bg-surface py-24 px-margin-mobile lg:px-margin-desktop border-t border-deep-black relative" id="daftar">
-<div class="max-w-[1200px] mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-<div class="lg:col-span-5 relative">
-<div class="sticky top-24">
-<div class="flex items-center gap-4 mb-6">
-<span class="font-headline-lg text-outline-variant opacity-50">03</span>
-<h2 class="font-headline-md text-deep-black uppercase">Cara Mendaftar</h2>
-</div>
-<p class="font-body-lg text-on-surface-variant mb-8">Pendaftaran terbuka untuk seluruh anak dan remaja di sekitar lingkungan TAMAN BACA Jalosi Sanak Negeri. Tidak dipungut biaya untuk pendaftaran awal.</p>
-<div class="bg-primary p-8 border border-deep-black shadow-[4px_4px_0px_0px_#000101] text-on-primary transform -rotate-1 relative z-10">
-<span class="font-label-stamp block mb-4 border-b border-on-primary/30 pb-2">INFO PENTING</span>
-<p class="font-body-sm mb-4">Harap membawa pas foto 3x4 (2 lembar) dan fotokopi Kartu Keluarga saat penyerahan formulir fisik di sekretariat.</p>
-<div class="flex items-center gap-2 font-label-mono text-sm">
-<span class="material-symbols-outlined text-sm">location_on</span> Jalan Tegal Sari, Pekon Air Kubang
-                  </div>
-</div>
-<div class="absolute -top-10 -left-10 w-32 h-32 bg-sticker-green rounded-full opacity-20 blur-xl -z-10"></div>
-</div>
-</div>
-<div class="lg:col-span-7">
-<div class="space-y-6">
-<div class="flex gap-6 group">
-<div class="flex-shrink-0 w-12 h-12 bg-surface border border-deep-black flex items-center justify-center font-headline-sm text-deep-black shadow-[2px_2px_0px_0px_#000101] group-hover:bg-sticker-green transition-colors">1</div>
-<div class="bg-surface-container border border-deep-black p-6 w-full shadow-[2px_2px_0px_0px_#000101]">
-<h4 class="font-headline-sm text-deep-black mb-2 uppercase">Isi Formulir Online</h4>
-<p class="font-body-sm text-on-surface-variant mb-4">Lengkapi data diri calon peserta didik melalui form pendaftaran. Pastikan data diisi oleh orang tua/wali.</p>
-<a class="inline-block font-label-stamp text-primary underline underline-offset-4 hover:text-deep-black transition-colors" href="kontak">BUKA FORMULIR →</a>
-</div>
-</div>
-<div class="flex gap-6 group">
-<div class="flex-shrink-0 w-12 h-12 bg-surface border border-deep-black flex items-center justify-center font-headline-sm text-deep-black shadow-[2px_2px_0px_0px_#000101] group-hover:bg-sticker-green transition-colors">2</div>
-<div class="bg-surface-container border border-deep-black p-6 w-full shadow-[2px_2px_0px_0px_#000101]">
-<h4 class="font-headline-sm text-deep-black mb-2 uppercase">Pilih Program & Jadwal</h4>
-<p class="font-body-sm text-on-surface-variant">Siswa dapat memilih maksimal 2 program pilihan di luar program wajib (Literasi Dasar). Jadwal akan disesuaikan dengan kapasitas kelas.</p>
-</div>
-</div>
-<div class="flex gap-6 group">
-<div class="flex-shrink-0 w-12 h-12 bg-surface border border-deep-black flex items-center justify-center font-headline-sm text-deep-black shadow-[2px_2px_0px_0px_#000101] group-hover:bg-sticker-green transition-colors">3</div>
-<div class="bg-surface-container border border-deep-black p-6 w-full shadow-[2px_2px_0px_0px_#000101]">
-<h4 class="font-headline-sm text-deep-black mb-2 uppercase">Verifikasi Tatap Muka</h4>
-<p class="font-body-sm text-on-surface-variant">Orang tua/wali dan calon siswa datang ke sekretariat TAMAN BACA pada hari kerja untuk menyerahkan dokumen fisik dan mengambil Kartu Anggota.</p>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>

@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col md:flex-row justify-between items-center gap-6 font-label-mono text-[10px] text-on-surface-variant uppercase tracking-widest">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 font-label-mono text-[10px] text-deep-black uppercase tracking-widest">
       <p>&copy; <?= date('Y') ?> TAMAN BACA JALOSI SANAK NEGERI.</p>
       <div class="flex gap-6">
         <a class="hover:text-deep-black" href="kontak">Privasi</a>

@@ -140,7 +140,7 @@ include __DIR__ . '/../components/head.php';
     </div>
     <div class="mt-12 flex justify-center">
       <a class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-mono text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="program">
-        [ LIHAT JADWAL &amp; DETAIL PROGRAM &rarr; ]
+        [ DETAIL PROGRAM &rarr; ]
       </a>
     </div>
   </div>

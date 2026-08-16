@@ -78,18 +78,18 @@ include __DIR__ . '/../components/head.php';
 <!-- Right Column: Shipping Info & Volunteer -->
 <div class="lg:col-span-5 flex flex-col gap-8">
 <!-- Shipping Box -->
-<div class="bg-primary-fixed border border-deep-black relative transform lg:rotate-1 hover:rotate-0 transition-transform duration-300">
+<div class="bg-header-bg border border-deep-black relative transform lg:rotate-1 hover:rotate-0 transition-transform duration-300">
 <div class="absolute -right-2 -bottom-2 w-full h-full bg-deep-black -z-10"></div>
-<div class="absolute top-4 right-4 text-primary-fixed-dim">
+<div class="absolute top-4 right-4 text-footer-bg">
 <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
 </div>
 <div class="p-6 lg:p-8 flex flex-col h-full justify-between gap-6">
 <div class="space-y-2">
-<span class="font-label-stamp text-label-stamp text-on-primary-fixed-variant uppercase tracking-widest flex items-center gap-2">
+<span class="font-label-stamp text-label-stamp text-footer-bg uppercase tracking-widest flex items-center gap-2">
 <span class="w-2 h-2 bg-error rounded-full animate-pulse"></span>
                 Kirim via Kurir
               </span>
-<h3 class="font-headline-sm text-headline-sm text-on-primary-fixed">Alamat Tujuan Donasi</h3>
+<h3 class="font-headline-sm text-headline-sm text-footer-bg">Alamat Tujuan Donasi</h3>
 </div>
 <div class="bg-surface p-4 border border-deep-black relative group">
 <p class="font-label-mono text-label-mono text-deep-black whitespace-pre-line" id="shipping-address">TAMAN BACA Jalosi Sanak Negeri
@@ -101,7 +101,7 @@ Lampung 35384
 <span class="material-symbols-outlined text-[16px]" id="copy-icon">content_copy</span>
 </button>
 </div>
-<p class="font-body-sm text-body-sm text-on-primary-fixed-variant opacity-80">
+<p class="font-body-sm text-body-sm text-footer-bg opacity-80">
               *Harap beri keterangan "DONASI BUKU" pada paket.
             </p>
 </div>
