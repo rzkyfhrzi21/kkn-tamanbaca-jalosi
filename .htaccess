@@ -11,13 +11,13 @@ RewriteEngine On
 # ------------------------------------------------------------
 
 # 1. Root '/' -> halaman beranda landing
-RewriteRule ^$ landing/index.html [L]
+RewriteRule ^$ landing/index.php [L]
 
-# 2. Slug halaman (/tentang, /program, /katalog, dst) -> landing/<slug>.html
+# 2. Slug halaman (/tentang, /program, /katalog, dst) -> landing/<slug>.php
 #    Hanya slug huruf-kecil & tanda hubung; hindari file/folder nyata.
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([a-z0-9-]+)$ landing/$1.html [L]
+RewriteRule ^([a-z0-9-]+)$ landing/$1.php [L]
 
 # 3. Blokir akses ke folder/file sensitif
 RewriteRule ^(docs|@agents|Zzz|\.git|\.rtk|\.codebase-memory)(/|$) - [F,L]
