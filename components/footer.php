@@ -37,7 +37,30 @@
   </div>
 </footer>
 <script>
-function toggleMobileMenu(){document.getElementById("mobile-menu").classList.toggle("hidden");}
+function toggleMobileMenu(){
+  var menu = document.getElementById("mobile-menu");
+  if (!menu) return;
+  var icon = document.querySelector("#mobile-menu-btn .material-symbols-outlined");
+  var isOpen = !menu.classList.contains("hidden");
+  if (isOpen) {
+    menu.classList.add("hidden");
+    document.body.style.overflow = "";
+    if (icon) icon.textContent = "menu";
+  } else {
+    menu.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    if (icon) icon.textContent = "close";
+  }
+}
+document.addEventListener("click", function (e) {
+  var menu = document.getElementById("mobile-menu");
+  if (menu && !menu.classList.contains("hidden") && e.target.closest("#mobile-menu a")) {
+    menu.classList.add("hidden");
+    document.body.style.overflow = "";
+    var icon = document.querySelector("#mobile-menu-btn .material-symbols-outlined");
+    if (icon) icon.textContent = "menu";
+  }
+});
 </script>
 </body>
 </html>

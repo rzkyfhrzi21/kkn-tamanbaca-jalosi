@@ -22,7 +22,7 @@ $_nav_items = [
   ['slug' => 'kontak',      'href' => 'kontak',     'label' => 'Kontak'],
 ];
 ?>
-<header class="fixed top-0 w-full z-50 bg-putih lg:bg-header-bg border-b border-deep-black">
+<header class="fixed top-0 w-full z-50 bg-putih lg:bg-deep-black border-b border-deep-black">
   <div class="h-20 max-w-[1200px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
     <div class="flex items-center gap-4">
       <a href="./" aria-label="Jalosi Sanak Negeri – Beranda">
@@ -46,14 +46,14 @@ $_nav_items = [
     </button>
   </div>
 </header>
-<div id="mobile-menu" class="lg:hidden hidden bg-putih border-b border-deep-black shadow-xl">
-  <nav class="max-w-[1200px] mx-auto px-margin-mobile py-4 flex flex-col gap-1 font-label-mono text-label-mono uppercase" aria-label="Navigasi Mobile">
+<div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden bg-putih overflow-y-auto">
+  <nav class="min-h-full w-full flex flex-col items-center justify-center gap-8 px-margin-mobile py-24 font-label-mono text-label-mono uppercase" aria-label="Navigasi Mobile">
     <?php foreach ($_nav_items as $_item):
       $_is_active = ($_item['slug'] === $page_active);
     ?>
       <a
         href="<?= htmlspecialchars($_item['href']) ?>"
-        class="py-2 px-3 transition-colors uppercase <?= $_is_active ? 'text-deep-black underline underline-offset-8 decoration-2' : 'text-deep-black' ?>"
+        class="text-2xl transition-colors <?= $_is_active ? 'text-deep-black underline underline-offset-8 decoration-2' : 'text-deep-black hover:text-oren' ?>"
         <?= $_is_active ? 'aria-current="page"' : '' ?>
       ><?= htmlspecialchars($_item['label']) ?></a>
     <?php endforeach; ?>
