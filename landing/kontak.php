@@ -19,7 +19,7 @@ include __DIR__ . '/../components/head.php';
 <h1 class="font-headline-lg text-deep-black leading-tight uppercase relative">
 <span class="absolute -left-8 top-0 opacity-20 pointer-events-none font-label-mono text-9xl leading-none -mt-8 hidden lg:block">07</span>
           Mari Berkunjung ke <br/>
-<span class="bg-cream-terang text-on-primary px-2 inline-block border-2 border-deep-black shadow-[6px_6px_0px_0px_#000101] transform rotate-1">Jalosi Sanak</span>
+<span class="bg-cream-terang text-on-primary px-2 inline-block border-2 border-deep-black shadow-[6px_6px_0px_0px_#000101] transform rotate-1">Jalosi Sanak Negeri</span>
 </h1>
 <p class="font-body-lg text-on-surface-variant max-w-lg border-l-4 border-deep-black pl-4">
           Temukan lokasi kami, lihat jadwal operasional, dan jangan ragu untuk menghubungi kami jika ada pertanyaan. Kami senang menyambut Anda.
