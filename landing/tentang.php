@@ -53,7 +53,7 @@ include __DIR__ . '/../components/head.php';
 </div>
 </section>
 <!-- Vision & Mission Bento Grid -->
-<section class="w-full bg-primary-fixed py-20 border-b-2 border-deep-black">
+<section class="w-full bg-cream-terang py-20 border-b-2 border-deep-black transition-colors has-[.konten-card:hover]:bg-oren-terang">
 <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
 <?php
 $section_title = 'Visi & Misi';
@@ -63,7 +63,7 @@ include __DIR__ . '/../components/section-header.php';
 ?>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 <!-- Visi Card (Large) -->
-<div class="lg:col-span-2 bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+<div class="konten-card lg:col-span-2 bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between group hover:-translate-y-1 transition-transform">
 <div class="flex justify-between items-start mb-12">
 <div class="bg-primary px-3 py-1 border-2 border-deep-black">
 <span class="font-label-stamp text-label-stamp text-on-primary uppercase tracking-widest">Visi</span>
@@ -76,7 +76,7 @@ include __DIR__ . '/../components/section-header.php';
           </p>
 </div>
 <!-- Misi Cards -->
-<div class="bg-surface-variant border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between">
+<div class="konten-card bg-surface-variant border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between">
 <div class="mb-8">
 <div class="inline-block bg-tertiary-container px-3 py-1 border-2 border-deep-black mb-6">
 <span class="font-label-stamp text-label-stamp text-on-tertiary-container uppercase tracking-widest">Akses Terbuka</span>
@@ -85,7 +85,7 @@ include __DIR__ . '/../components/section-header.php';
 <p class="font-body-sm text-body-sm text-on-surface-variant">Menyediakan akses bahan bacaan berkualitas yang merata bagi seluruh lapisan masyarakat tanpa memandang latar belakang.</p>
 </div>
 </div>
-<div class="bg-surface-variant border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between">
+<div class="konten-card bg-surface-variant border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between">
 <div class="mb-8">
 <div class="inline-block bg-tertiary-container px-3 py-1 border-2 border-deep-black mb-6">
 <span class="font-label-stamp text-label-stamp text-on-tertiary-container uppercase tracking-widest">Ruang Kreasi</span>
@@ -95,7 +95,7 @@ include __DIR__ . '/../components/section-header.php';
 </div>
 </div>
 <!-- Misi Image Card -->
-<div class="lg:col-span-2 relative bg-primary-container border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] overflow-hidden min-h-[250px]">
+<div class="konten-card lg:col-span-2 relative bg-primary-container border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] overflow-hidden min-h-[250px]">
 <div class="absolute inset-0 bg-cover bg-center mix-blend-multiply opacity-80" data-alt="Close up shot of hands passing a worn book over a rustic wooden table, overhead angle, strong shadows, brutalist photography style, earthy tones, community sharing concept." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv05L6AKh-q30tbHZyvfjNjqWkCbJaTWUIEprsJnZhHEiU2rJL4Pal8SuBbdUQOjiBjV3JHDXwFSsl9CnxTrNMXTd2mXmQp1aNCkF7koVA39t_-k_ihgGcXCJte4HHaQAKW3Kz8WEQMRnVRKVJ34yrAEsdrTkCiEVjtFZF3I8Gt4xwTJ5IHNigrPR3DCIqDA5mA0n_uPKhiwjQhZ5lL7Cy7dS9I5pqdAlw3E8STpHydd5rPSBkGd-A')">
 </div>
 <div class="relative z-10 p-8 h-full flex flex-col justify-end bg-gradient-to-t from-deep-black/80 to-transparent">
@@ -110,7 +110,7 @@ include __DIR__ . '/../components/section-header.php';
 </div>
 </section>
 <!-- Impact & Timeline -->
-<section class="w-full bg-surface py-20 relative">
+<section class="w-full bg-surface py-20 border-b-2 border-deep-black relative">
 <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 <!-- Interactive Chart / Graphic Element -->
@@ -121,7 +121,7 @@ include __DIR__ . '/../components/section-header.php';
 <svg class="w-48 h-48 mb-8 transform -rotate-90" viewbox="0 0 100 100">
 <circle class="stroke-surface-variant" cx="50" cy="50" fill="none" r="45" stroke-width="8"></circle>
 <circle class="stroke-primary" cx="50" cy="50" fill="none" r="45" stroke-dasharray="282.7" stroke-dashoffset="60" stroke-width="8" style="transition: stroke-dashoffset 1.5s ease-in-out;"></circle>
-<text class="font-label-mono text-[16px] fill-deep-black font-bold transform rotate-90" dominant-baseline="middle" text-anchor="middle" x="50" y="50">1.5K+</text>
+<text class="font-label-mono text-[16px] fill-deep-black font-bold" dominant-baseline="middle" text-anchor="middle" x="50" y="50" transform="rotate(90 50 50)">1.5K+</text>
 </svg>
 <div class="text-center">
 <h3 class="font-headline-sm text-headline-sm text-deep-black uppercase">Total Koleksi Saat Ini</h3>
@@ -165,6 +165,49 @@ include __DIR__ . '/../components/section-header.php';
 </div>
 </div>
 </div>
+</div>
+</div>
+</section>
+<!-- Liputan Media -->
+<section class="w-full bg-cream-terang py-20 transition-colors has-[.konten-card:hover]:bg-oren-terang">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<?php
+$section_title = 'Liputan Media';
+$section_kicker = 'DILIPUT WARTAWAN KOTA';
+$section_kicker_class = 'text-on-primary-fixed-variant';
+include __DIR__ . '/../components/section-header.php';
+?>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<a href="https://radioidola.com/2023/tamar-widadi-pendiri-rumah-baca-sanak-negeri-di-air-naningan-lampung/" target="_blank" rel="noopener" class="konten-card group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#000101] transition-all">
+<div class="flex justify-between items-start mb-8">
+<div class="bg-sticker-green px-3 py-1 border-2 border-deep-black">
+<span class="font-label-stamp text-label-stamp text-deep-black uppercase tracking-widest">Radio Idola 92.6 FM</span>
+</div>
+<span class="font-label-mono text-[11px] text-on-surface-variant uppercase tracking-widest">29 Sep 2023</span>
+</div>
+<span class="material-symbols-outlined text-outline text-4xl group-hover:text-primary transition-colors mb-4">newspaper</span>
+<h3 class="font-headline-sm text-headline-sm text-deep-black mb-3">Tamar Widadi, Pendiri Rumah Baca Sanak Negeri di Air Naningan Lampung</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-6">Wawancara radio Idola bersama Tamar soal literasi gratis dan ruang belajar bagi anak-anak pelosok kampung sejak 2015, lengkap dengan podcast.</p>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-deep-black uppercase tracking-widest border-t-2 border-deep-black pt-4 mt-6">
+Baca Berita
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<a href="https://lampunggehnews.com/2026/07/05/dari-rumah-bata-tamar-menumbuhkan-literasi-anak-anak-di-pelosok-tanggamus/" target="_blank" rel="noopener" class="konten-card group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#000101] transition-all">
+<div class="flex justify-between items-start mb-8">
+<div class="bg-sticker-green px-3 py-1 border-2 border-deep-black">
+<span class="font-label-stamp text-label-stamp text-deep-black uppercase tracking-widest">Lampung Geh News</span>
+</div>
+<span class="font-label-mono text-[11px] text-on-surface-variant uppercase tracking-widest">05 Jul 2026</span>
+</div>
+<span class="material-symbols-outlined text-outline text-4xl group-hover:text-primary transition-colors mb-4">rss_feed</span>
+<h3 class="font-headline-sm text-headline-sm text-deep-black mb-3">Dari Rumah Bata, Tamar Menumbuhkan Literasi Anak-anak di Pelosok Tanggamus</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-6">Feature Lampung Geh: rumah bata sederhana jadi ruang belajar, bermain, dan edukasi konservasi yang dinikmati puluhan anak tiap pekan.</p>
+<div class="flex items-center gap-2 font-label-mono text-label-mono text-deep-black uppercase tracking-widest border-t-2 border-deep-black pt-4 mt-6">
+Baca Berita
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
 </div>
 </div>
 </section>

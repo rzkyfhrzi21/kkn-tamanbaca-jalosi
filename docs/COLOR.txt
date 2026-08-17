@@ -1,7 +1,9 @@
-cream #C1AF91
+cream-gelap #C1AF91
+cream-terang #f4e0c0
 Hijau stabilo #BBD65F
-Hitam #000101O
 Putih #FEFFFE
 Abu Gelap #4B4B4A
-oren #B66445
-hitam #000101w
+oren gelap #B66746
+oren terang #E9922D
+hitam #000101
+kuning emas #D3AE3F

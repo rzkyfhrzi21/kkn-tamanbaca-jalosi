@@ -9,7 +9,7 @@ include __DIR__ . '/../components/head.php';
 <main class="w-full pt-20 min-h-screen">
 <div class="flex flex-col w-full">
 <!-- Hero Section -->
-<section class="w-full bg-surface border-b-2 border-deep-black py-20 relative overflow-hidden">
+<section class="w-full bg-surface border-b-2 border-deep-black py-20 relative overflow-hidden" style="background-image: linear-gradient(rgba(248,250,249,0.88), rgba(248,250,249,0.88)), url('assets/images/hero-beranda.png'); background-size: cover; background-position: center center;">
   <div class="absolute top-0 right-0 w-64 h-64 bg-surface-variant rounded-full blur-3xl opacity-50 -mr-20 -mt-20"></div>
   <div class="absolute bottom-0 left-10 w-96 h-96 bg-primary-container rounded-full blur-3xl opacity-30 -mb-20"></div>
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
@@ -36,11 +36,53 @@ include __DIR__ . '/../components/head.php';
         </div>
       </div>
       <div class="lg:col-span-5 relative">
-        <div class="relative bg-surface border-2 border-deep-black shadow-[8px_8px_0px_0px_#000101] p-3 aspect-[4/5] transform rotate-1 hover:rotate-0 transition-transform duration-300">
-          <div class="absolute top-0 right-0 w-8 h-8 bg-sticker-green border-b-2 border-l-2 border-deep-black z-20 flex items-center justify-center">
-            <span class="material-symbols-outlined text-deep-black text-sm">push_pin</span>
+        <div class="bg-surface-container-lowest border-2 border-deep-black shadow-[8px_8px_0px_0px_#000101] p-6 relative">
+          <div class="absolute -top-3 -right-3 bg-primary text-on-primary font-label-stamp text-label-stamp px-2 py-1 border-2 border-deep-black transform rotate-6">
+            FAKTA CEPAT
           </div>
-          <div class="w-full h-full bg-cover bg-center border-2 border-deep-black grayscale sepia-[0.2] contrast-125" data-alt="Suasana hangat Taman Baca Jalosi Sanak Negeri, rak kayu berisi buku, cahaya alami, dokumenter." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCRqvPY4hVpJ2IC1cPBGPIBzfGVTfCDxhPBJ1_VnCqVhsFry4TrqRxtuyey4-jnTURsuUi9WuqkTEjBcXd8BMnFfU60e2iDRJeU2RYpu-aRDSPhYVWVj-D1eSgUMEXEde-foYSFeOw8JbWBORDY1-NBNVl8-HWjhuzRqfQ9I3wCd_NwGTAZ2o9LSA--hECsbNZDfv4Hjkr8Skok4rAAED152Yni9YAsiPLLqi-NrVsmlQdCm-8MBsI7')">
+          <div class="flex flex-col gap-4 font-label-mono text-label-mono text-deep-black uppercase">
+            <div class="flex h-12 w-full gap-0.5 opacity-80 mb-4">
+              <div class="w-1 bg-deep-black h-full"></div>
+              <div class="w-2 bg-deep-black h-full"></div>
+              <div class="w-1 bg-deep-black h-full"></div>
+              <div class="w-3 bg-deep-black h-full"></div>
+              <div class="w-0.5 bg-deep-black h-full"></div>
+              <div class="w-1.5 bg-deep-black h-full"></div>
+              <div class="w-1 bg-deep-black h-full"></div>
+              <div class="w-4 bg-deep-black h-full"></div>
+              <div class="w-1 bg-deep-black h-full"></div>
+              <div class="w-2 bg-deep-black h-full"></div>
+              <div class="w-1 bg-deep-black h-full"></div>
+              <div class="w-0.5 bg-deep-black h-full"></div>
+              <div class="w-3 bg-deep-black h-full"></div>
+              <div class="w-1 bg-deep-black h-full"></div>
+              <div class="w-2 bg-deep-black h-full"></div>
+              <div class="w-1 bg-deep-black h-full"></div>
+              <div class="w-1.5 bg-deep-black h-full"></div>
+              <div class="w-0.5 bg-deep-black h-full"></div>
+              <div class="w-1 bg-deep-black h-full"></div>
+              <div class="w-2 bg-deep-black h-full"></div>
+              <div class="w-3 bg-deep-black h-full"></div>
+            </div>
+            <div class="flex justify-between items-center border-b border-deep-black/20 pb-2">
+              <span class="">Koleksi Buku</span>
+              <span class="font-bold text-oren">1.500+</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-deep-black/20 pb-2">
+              <span class="">Berdiri Sejak</span>
+              <span class="font-bold">2015</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-deep-black/20 pb-2">
+              <span class="">Lokasi</span>
+              <span class="font-bold">±120m dr SDN 3</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="">Program Aktif</span>
+              <span class="font-bold text-oren">4 Pilar</span>
+            </div>
+            <div class="mt-2 text-center text-[10px] text-on-surface-variant/60 tracking-[0.3em]">
+              017-07-2015-JSN
+            </div>
           </div>
         </div>
       </div>
@@ -48,7 +90,7 @@ include __DIR__ . '/../components/head.php';
   </div>
 </section>
 <!-- Kata Pendiri -->
-<section class="w-full bg-primary-fixed py-20 border-b-2 border-deep-black">
+<section class="w-full bg-cream-terang py-20 border-b-2 border-deep-black transition-colors has-[.konten-card:hover]:bg-oren-terang">
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
     <?php
     $section_title = 'Kata Pendiri';
@@ -57,7 +99,7 @@ include __DIR__ . '/../components/head.php';
     include __DIR__ . '/../components/section-header.php';
     ?>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
-      <div class="bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between">
+      <div class="konten-card bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between">
         <div>
           <div class="flex items-center gap-4 border-b-2 border-deep-black pb-6 mb-6">
             <div class="w-16 h-16 bg-primary-fixed border-2 border-deep-black flex items-center justify-center shadow-[2px_2px_0px_0px_#000101]">
@@ -80,7 +122,7 @@ include __DIR__ . '/../components/head.php';
           <span class="font-label-mono text-label-mono text-on-surface-variant">Pendiri &amp; Pengelola</span>
         </div>
       </div>
-      <div class="bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+      <div class="konten-card bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between group hover:-translate-y-1 transition-transform">
         <div class="flex justify-between items-start mb-12">
           <div class="bg-primary px-3 py-1 border-2 border-deep-black">
             <span class="font-label-stamp text-label-stamp text-on-primary uppercase tracking-widest">Koleksi</span>
@@ -91,6 +133,36 @@ include __DIR__ . '/../components/head.php';
         <p class="font-body-sm text-body-sm text-on-surface-variant">
           Berawal dari sepuluh buku bekas seharga lima hingga sepuluh ribu rupiah, kini lebih dari 1,500 buku mengisi rak-rak rumah bata sederhana — bacaan untuk semua usia, dari cerita anak hingga literatur pengetahuan.
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Liputan Media -->
+<section class="w-full bg-surface border-b-2 border-deep-black py-14">
+  <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+      <div class="max-w-sm">
+        <span class="font-label-mono text-[11px] text-on-surface-variant uppercase tracking-widest mb-2 block">[ PRESS &amp; MEDIA ]</span>
+        <h2 class="font-headline-md text-headline-md text-deep-black uppercase mb-2">Pernah Diliput Media</h2>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Kisah Jalosi pernah ditulis wartawan dari kota. Baca selengkapnya di halaman tentang.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://radioidola.com/2023/tamar-widadi-pendiri-rumah-baca-sanak-negeri-di-air-naningan-lampung/" target="_blank" rel="noopener" class="group flex items-center gap-4 bg-surface-container-lowest border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] px-5 py-4 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#000101] transition-all">
+          <span class="material-symbols-outlined text-deep-black text-2xl">newspaper</span>
+          <span class="flex flex-col">
+            <span class="font-label-stamp text-label-stamp text-deep-black uppercase">Radio Idola 92.6 FM</span>
+            <span class="font-label-mono text-[11px] text-on-surface-variant uppercase tracking-widest">Liputan • 2023</span>
+          </span>
+          <span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+        <a href="https://lampunggehnews.com/2026/07/05/dari-rumah-bata-tamar-menumbuhkan-literasi-anak-anak-di-pelosok-tanggamus/" target="_blank" rel="noopener" class="group flex items-center gap-4 bg-surface-container-lowest border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] px-5 py-4 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#000101] transition-all">
+          <span class="material-symbols-outlined text-deep-black text-2xl">rss_feed</span>
+          <span class="flex flex-col">
+            <span class="font-label-stamp text-label-stamp text-deep-black uppercase">Lampung Geh News</span>
+            <span class="font-label-mono text-[11px] text-on-surface-variant uppercase tracking-widest">Liputan • 2026</span>
+          </span>
+          <span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
       </div>
     </div>
   </div>
@@ -206,10 +278,10 @@ include __DIR__ . '/../components/head.php';
   </div>
 </section>
 <!-- Donasi Receipt -->
-<section class="w-full bg-primary-fixed py-20 border-b-2 border-deep-black relative overflow-hidden" id="donasi">
+<section class="w-full bg-cream-terang py-20 border-b-2 border-deep-black relative overflow-hidden transition-colors has-[.konten-card:hover]:bg-oren-terang" id="donasi">
   <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #000101, #000101 2px, transparent 2px, transparent 10px);"></div>
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10 flex flex-col md:flex-row gap-12 items-center justify-center">
-    <div class="max-w-md w-full bg-surface border-2 border-deep-black p-8 shadow-[8px_8px_0px_0px_#000101] relative transform rotate-1">
+    <div class="konten-card max-w-md w-full bg-surface border-2 border-deep-black p-8 shadow-[8px_8px_0px_0px_#000101] relative transform rotate-1">
       <div class="absolute -top-2 left-0 w-full h-4" style="background-image: radial-gradient(circle at 5px 0px, transparent 5px, #ffffff 6px); background-size: 10px 10px; background-repeat: repeat-x;"></div>
       <div class="text-center border-b-2 border-deep-black pb-6 mb-6 border-dashed">
         <h2 class="font-headline-md text-[24px] text-deep-black uppercase tracking-tighter mb-2">Kirim Buku, Kirim Harapan</h2>

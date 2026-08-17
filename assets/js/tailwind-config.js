@@ -69,7 +69,12 @@ tailwind.config = {
         "hitam": "#000101",
         "putih": "#FEFFFE",
         "abu-gelap": "#4B4B4A",
-        "oren": "#B66445",
+        "oren": "#B66746",
+        "oren-gelap": "#B66746",
+        "oren-terang": "#E9922D",
+        "kuning-emas": "#D3AE3F",
+        "cream-gelap": "#C1AF91",
+        "cream-terang": "#f4e0c0",
       },
       borderRadius: {
         DEFAULT: "0.25rem",
