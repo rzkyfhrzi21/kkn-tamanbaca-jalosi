@@ -1,14 +1,51 @@
+# ==============================================================================
+# ROBOTS.TXT Taman Baca Jalosi Sanak Negeri (SEO-OPTIMIZED & SECURE)
+# ==============================================================================
+
 User-agent: *
 Allow: /
 
+# Aset publik (diizinkan agar rendering Googlebot sempurna)
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+Allow: /assets/fonts/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Folder internal PHP & dokumen (hindari konten duplikat / file mentah)
 Disallow: /landing/
 Disallow: /components/
 Disallow: /docs/
 Disallow: /@agents/
 Disallow: /Zzz/
-Disallow: /assets/
 Disallow: /\.codebase-memory/
 Disallow: /\.git/
 Disallow: /\.rtk/
+
+# Rute privat / auth / sistem (keamanan & efisiensi crawl budget)
+Disallow: /login
+Disallow: /login.html
+Disallow: /login.php
+Disallow: /register
+Disallow: /register.html
+Disallow: /register.php
+Disallow: /lupa-password
+Disallow: /reset-password
+Disallow: /dashboard/
+Disallow: /admin/
+Disallow: /superadmin/
+Disallow: /api/
+Disallow: /backend/
+Disallow: /config/
+Disallow: /database/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /*.php$
 
 Sitemap: https://tbjalosi.web.id/sitemap.xml

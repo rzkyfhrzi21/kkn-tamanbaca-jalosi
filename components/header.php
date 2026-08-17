@@ -26,7 +26,7 @@ $_nav_items = [
   <div class="h-20 max-w-[1200px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
     <div class="flex items-center gap-4">
       <a href="./" aria-label="Jalosi Sanak Negeri – Beranda">
-        <img alt="logo.png" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLsJN0ukS58RdOYr01DoNAMnwiGJHZwR7_K4-lvo9t8Kwpeiflh08XEZEw0rDyHP4QhAAty9FjMoYeQhSEU3Jsc_-_bSf8Z-LeGRphflxZ99LzAakxHLEes3lFUqDkJglXBFqn2NXSQBE2_TWbPX5lG-2mttUCalboVb_XP6SzSM5hm-NZ7YjkQ29t6Ds2hZYh34eKdYmWhYPcUjCIEHYTWvlz0s7X1u8xh1cdTPLVGJPkIoJKPCM3EulEuhGYwUL7zJDq2aCCwh"/>
+        <img alt="Logo Taman Baca Jalosi Sanak Negeri, Pekon Air Kubang, Tanggamus" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLsJN0ukS58RdOYr01DoNAMnwiGJHZwR7_K4-lvo9t8Kwpeiflh08XEZEw0rDyHP4QhAAty9FjMoYeQhSEU3Jsc_-_bSf8Z-LeGRphflxZ99LzAakxHLEes3lFUqDkJglXBFqn2NXSQBE2_TWbPX5lG-2mttUCalboVb_XP6SzSM5hm-NZ7YjkQ29t6Ds2hZYh34eKdYmWhYPcUjCIEHYTWvlz0s7X1u8xh1cdTPLVGJPkIoJKPCM3EulEuhGYwUL7zJDq2aCCwh"/>
       </a>
       <span class="font-headline-sm text-deep-black lg:text-footer-bg uppercase tracking-widest">Jalosi Sanak Negeri</span>
     </div>

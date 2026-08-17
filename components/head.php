@@ -14,14 +14,15 @@
  *   include __DIR__ . '/../components/head.php';
  *   ?>
  */
-$page_title    = $page_title ?? 'TAMAN BACA Jalosi Sanak Negeri';
+$page_title    = $page_title ?? 'Taman Baca Jalosi Sanak Negeri';
 $page_desc     = $page_desc  ?? 'Taman Baca Jalosi Sanak Negeri, Pekon Air Kubang, Tanggamus, Lampung.';
 $page_canonical = $page_canonical ?? '/';
 $page_active   = $page_active ?? '';
+$page_keywords = $page_keywords ?? 'taman baca, taman baca masyarakat, perpustakaan, literasi, Pekon Air Kubang, Tanggamus, Lampung, buku, komunitas';
 
 /* ── SEO: identitas situs & halaman ─────────────────────────── */
 $site_url      = 'https://tbjalosi.web.id';
-$site_name     = 'TAMAN BACA Jalosi Sanak Negeri';
+$site_name     = 'Taman Baca Jalosi Sanak Negeri';
 $site_locale   = 'id_ID';
 $page_url      = rtrim($site_url, '/') . '/' . ltrim($page_canonical, '/');
 if ($page_canonical === '/' || $page_canonical === '') { $page_url = $site_url . '/'; }
@@ -38,7 +39,9 @@ $og_image_alt  = 'Suasana hangat Taman Baca Jalosi Sanak Negeri, Pekon Air Kuban
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title><?= htmlspecialchars($seo_title) ?></title>
 <meta name="description" content="<?= htmlspecialchars($page_desc) ?>"/>
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="keywords" content="<?= htmlspecialchars($page_keywords) ?>"/>
+<meta name="author" content="Taman Baca Jalosi Sanak Negeri"/>
 <meta name="theme-color" content="#000101"/>
 <link rel="canonical" href="<?= htmlspecialchars($page_url) ?>"/>
 <!-- Open Graph -->
@@ -55,7 +58,9 @@ $og_image_alt  = 'Suasana hangat Taman Baca Jalosi Sanak Negeri, Pekon Air Kuban
 <meta name="twitter:title" content="<?= htmlspecialchars($seo_title) ?>"/>
 <meta name="twitter:description" content="<?= htmlspecialchars($page_desc) ?>"/>
 <meta name="twitter:image" content="<?= htmlspecialchars($og_image) ?>"/>
-<link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida/AP1WRLsJN0ukS58RdOYr01DoNAMnwiGJHZwR7_K4-lvo9t8Kwpeiflh08XEZEw0rDyHP4QhAAty9FjMoYeQhSEU3Jsc_-_bSf8Z-LeGRphflxZ99LzAakxHLEes3lFUqDkJglXBFqn2NXSQBE2_TWbPX5lG-2mttUCalboVb_XP6SzSM5hm-NZ7YjkQ29t6Ds2hZYh34eKdYmWhYPcUjCIEHYTWvlz0s7X1u8xh1cdTPLVGJPkIoJKPCM3EulEuhGYwUL7zJDq2aCCwh"/>
+<link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/aida/AP1WRLsJN0ukS58RdOYr01DoNAMnwiGJHZwR7_K4-lvo9t8Kwpeiflh08XEZEw0rDyHP4QhAAty9FjMoYeQhSEU3Jsc_-_bSf8Z-LeGRphflxZ99LzAakxHLEes3lFUqDkJglXBFqn2NXSQBE2_TWbPX5lG-2mttUCalboVb_XP6SzSM5hm-NZ7YjkQ29t6Ds2hZYh34eKdYmWhYPcUjCIEHYTWvlz0s7X1u8xh1cdTPLVGJPkIoJKPCM3EulEuhGYwUL7zJDq2aCCwh"/>
+<link rel="icon" type="image/png" sizes="16x16" href="https://lh3.googleusercontent.com/aida/AP1WRLsJN0ukS58RdOYr01DoNAMnwiGJHZwR7_K4-lvo9t8Kwpeiflh08XEZEw0rDyHP4QhAAty9FjMoYeQhSEU3Jsc_-_bSf8Z-LeGRphflxZ99LzAakxHLEes3lFUqDkJglXBFqn2NXSQBE2_TWbPX5lG-2mttUCalboVb_XP6SzSM5hm-NZ7YjkQ29t6Ds2hZYh34eKdYmWhYPcUjCIEHYTWvlz0s7X1u8xh1cdTPLVGJPkIoJKPCM3EulEuhGYwUL7zJDq2aCCwh"/>
+<link rel="apple-touch-icon" sizes="180x180" href="https://lh3.googleusercontent.com/aida/AP1WRLsJN0ukS58RdOYr01DoNAMnwiGJHZwR7_K4-lvo9t8Kwpeiflh08XEZEw0rDyHP4QhAAty9FjMoYeQhSEU3Jsc_-_bSf8Z-LeGRphflxZ99LzAakxHLEes3lFUqDkJglXBFqn2NXSQBE2_TWbPX5lG-2mttUCalboVb_XP6SzSM5hm-NZ7YjkQ29t6Ds2hZYh34eKdYmWhYPcUjCIEHYTWvlz0s7X1u8xh1cdTPLVGJPkIoJKPCM3EulEuhGYwUL7zJDq2aCCwh"/>
 <link rel="stylesheet" href="assets/css/fonts.css"/>
 <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style>
 <script src="https://cdn.tailwindcss.com"></script>

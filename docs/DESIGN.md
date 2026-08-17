@@ -86,7 +86,7 @@ Font di-self-host di `assets/fonts/` (`tuku-sub-head.otf`, `tuku-handwriting.wof
 #### A. Top Bar & Navigasi ("Kedai Baca")
 * **Style:** Latar header navbar desktop **`#000101`** (`bg-deep-black`) dengan teks **`#FEFFFE`** (`text-footer-bg`) dan garis pembatas `border-b border-deep-black`.
 * **Responsif (Mobile):** Saat tampilan mobile (`< lg`), latar navbar berubah **putih `#FEFFFE`** (`bg-putih`) dan teks berubah **hitam `#000101`** (`text-deep-black`). Judul website tetap tampil di semua ukuran layar. Menu mobile tampil sebagai **overlay full-screen** (fixed, menutupi seluruh layar) dengan menu teks besar di tengah, dan bisa ditutup lewat tombol X di navbar.
-* **Logo TBM:** Tipografi bold bergaya cap TUKU: **TAMAN BACA JALOSI** dengan sub-teks monospace `SANAK NEGERI • EST. 2015`.
+* **Logo TBM:** Tipografi bold bergaya cap TUKU: **Taman Baca Jalosi** dengan sub-teks monospace `Sanak Negeri • Est. 2015`.
 * **Menu Navigasi:** `Beranda`, `Tentang`, `Program & Jadwal`, `Katalog Buku`, `Pojok Karya`, `Donasi & Relawan`, `Kontak`.
 * **Action:** Badge lokasi `📍 AIR NANINGAN (120m DARI SDN 3)` + Tombol CTA `Sapa Pengelola (WA)`.
 

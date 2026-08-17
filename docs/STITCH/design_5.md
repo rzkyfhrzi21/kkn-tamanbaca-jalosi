@@ -72,7 +72,7 @@ Mengadaptasi DNA visual dan filosofi branding khas **Toko Kopi TUKU** (*tuku.cof
 
 #### A. Top Bar & Navigasi ("Kedai Baca")
 * **Style:** Latar putih gading (`bg-[#F7F3ED]/95 backdrop-blur-md`) dengan garis pembatas tipis `border-b border-[#2B2523]`.
-* **Logo TBM:** Tipografi bold bergaya cap TUKU: **TAMAN BACA JALOSI** dengan sub-teks monospace `SANAK NEGERI • EST. 2015`.
+* **Logo TBM:** Tipografi bold bergaya cap TUKU: **Taman Baca Jalosi** dengan sub-teks monospace `Sanak Negeri • Est. 2015`.
 * **Menu Navigasi:** `Beranda`, `Tentang`, `Program & Jadwal`, `Katalog Buku`, `Pojok Karya`, `Donasi & Relawan`, `Kontak`.
 * **Action:** Badge lokasi `📍 AIR NANINGAN (120m DARI SDN 3)` + Tombol CTA `Sapa Pengelola (WA)`.
 

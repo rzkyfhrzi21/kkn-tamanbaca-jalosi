@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Donasi';
-$page_desc = 'Dukung TAMAN BACA Jalosi Sanak Negeri lewat donasi buku dan relawan.';
+$page_desc = 'Dukung Taman Baca Jalosi Sanak Negeri lewat donasi buku dan relawan.';
 $page_canonical = '/donasi';
 $page_active = 'donasi';
 include __DIR__ . '/../components/head.php';
@@ -28,7 +28,7 @@ include __DIR__ . '/../components/head.php';
 </svg>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-            TAMAN BACA Jalosi Sanak Negeri menerima donasi buku layak baca untuk menambah koleksi perpustakaan desa kami. Setiap halaman yang Anda bagikan, membuka jendela dunia baru bagi anak-anak di Pekon Air Kubang.
+            Taman Baca Jalosi Sanak Negeri menerima donasi buku layak baca untuk menambah koleksi perpustakaan desa kami. Setiap halaman yang Anda bagikan, membuka jendela dunia baru bagi anak-anak di Pekon Air Kubang.
           </p>
 </div>
 <!-- Book Wishlist -->
@@ -92,7 +92,7 @@ include __DIR__ . '/../components/head.php';
 <h3 class="font-headline-sm text-headline-sm text-footer-bg">Alamat Tujuan Donasi</h3>
 </div>
 <div class="bg-surface p-4 border border-deep-black relative group">
-<p class="font-label-mono text-label-mono text-deep-black whitespace-pre-line" id="shipping-address">TAMAN BACA Jalosi Sanak Negeri
+<p class="font-label-mono text-label-mono text-deep-black whitespace-pre-line" id="shipping-address">Taman Baca Jalosi Sanak Negeri
 Jalan Tegal Sari, Pekon Air Kubang
 Kec. Air Naningan, Kab. Tanggamus
 Lampung 35384

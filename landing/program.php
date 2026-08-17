@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Program';
-$page_desc = 'Ragam program TAMAN BACA Jalosi Sanak Negeri: membaca, komputer, seni, dan konservasi.';
+$page_desc = 'Ragam program Taman Baca Jalosi Sanak Negeri: membaca, komputer, seni, dan konservasi.';
 $page_canonical = '/program';
 $page_active = 'program';
 include __DIR__ . '/../components/head.php';

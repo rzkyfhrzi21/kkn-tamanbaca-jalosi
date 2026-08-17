@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Tentang Kami';
-$page_desc = 'Sejarah dan visi misi TAMAN BACA Jalosi Sanak Negeri di Pekon Air Kubang, Tanggamus.';
+$page_desc = 'Sejarah dan visi misi Taman Baca Jalosi Sanak Negeri di Pekon Air Kubang, Tanggamus.';
 $page_canonical = '/tentang';
 $page_active = 'tentang';
 include __DIR__ . '/../components/head.php';
@@ -27,7 +27,7 @@ include __DIR__ . '/../components/head.php';
             Lokal.
           </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">
-            Didirikan pada 17 Juli 2015 oleh Tamar Widadi, TAMAN BACA Jalosi Sanak Negeri berawal dari rumah bata sederhana dengan rak kayu dan koleksi sepuluh buku bekas. Sebuah inisiatif yang tumbuh dari panggilan hati untuk menghadirkan ruang belajar dan membaca yang dapat diakses siapa saja bagi anak-anak kampung.
+            Didirikan pada 17 Juli 2015 oleh Tamar Widadi, Taman Baca Jalosi Sanak Negeri berawal dari rumah bata sederhana dengan rak kayu dan koleksi sepuluh buku bekas. Sebuah inisiatif yang tumbuh dari panggilan hati untuk menghadirkan ruang belajar dan membaca yang dapat diakses siapa saja bagi anak-anak kampung.
           </p>
 <div class="flex items-center gap-4 border-t-2 border-deep-black pt-6 w-full max-w-md">
 <div class="w-16 h-16 bg-primary-fixed border-2 border-deep-black flex items-center justify-center shadow-[2px_2px_0px_0px_#000101]">

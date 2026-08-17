@@ -1,6 +1,6 @@
 <?php
-$page_title = 'TAMAN BACA Jalosi Sanak Negeri – Rumah Literasi Pekon Air Kubang';
-$page_desc  = 'Taman Baca Jalosi Sanak Negeri: taman baca masyarakat di Pekon Air Kubang, Tanggamus, Lampung. Berdiri 17 Juli 2015, 1,500+ buku, program literasi, komputer, seni, dan konservasi.';
+$page_title = 'Taman Baca Jalosi Sanak Negeri – Rumah Literasi Air Kubang';
+$page_desc  = 'Taman Baca Jalosi Sanak Negeri di Pekon Air Kubang, Tanggamus, Lampung. Berdiri 17 Juli 2015 dengan 1,500+ buku serta program literasi, komputer, dan seni.';
 $page_active = 'beranda';
 include __DIR__ . '/../components/head.php';
 ?>
@@ -213,12 +213,12 @@ include __DIR__ . '/../components/head.php';
       <div class="absolute -top-2 left-0 w-full h-4" style="background-image: radial-gradient(circle at 5px 0px, transparent 5px, #ffffff 6px); background-size: 10px 10px; background-repeat: repeat-x;"></div>
       <div class="text-center border-b-2 border-deep-black pb-6 mb-6 border-dashed">
         <h2 class="font-headline-md text-[24px] text-deep-black uppercase tracking-tighter mb-2">Kirim Buku, Kirim Harapan</h2>
-        <p class="font-label-mono text-[12px] text-on-surface-variant uppercase">TAMAN BACA Jalosi Sanak Negeri</p>
+        <p class="font-label-mono text-[12px] text-on-surface-variant">Taman Baca Jalosi Sanak Negeri</p>
       </div>
       <div class="flex flex-col gap-4 font-label-mono text-[13px] text-deep-black">
         <div class="flex flex-col">
           <span class="text-deep-black text-[10px] uppercase tracking-widest mb-1">Penerima</span>
-          <span class="font-bold">Tamar Widadi / TAMAN BACA Jalosi</span>
+          <span class="font-bold">Tamar Widadi / Taman Baca Jalosi</span>
         </div>
         <div class="flex flex-col">
           <span class="text-deep-black text-[10px] uppercase tracking-widest mb-1">Alamat Pengiriman</span>

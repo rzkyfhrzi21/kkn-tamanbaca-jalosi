@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Katalog';
-$page_desc = 'Katalog koleksi 1,500+ buku TAMAN BACA Jalosi Sanak Negeri.';
+$page_desc = 'Katalog koleksi 1,500+ buku Taman Baca Jalosi Sanak Negeri.';
 $page_canonical = '/katalog';
 $page_active = 'katalog';
 include __DIR__ . '/../components/head.php';

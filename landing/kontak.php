@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Kontak';
-$page_desc = 'Hubungi TAMAN BACA Jalosi Sanak Negeri, Pekon Air Kubang, Tanggamus, Lampung.';
+$page_desc = 'Hubungi Taman Baca Jalosi Sanak Negeri, Pekon Air Kubang, Tanggamus, Lampung.';
 $page_canonical = '/kontak';
 $page_active = 'kontak';
 include __DIR__ . '/../components/head.php';

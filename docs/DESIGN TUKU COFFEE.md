@@ -2,7 +2,7 @@
 
 Dokumen analisa referensi desain dari file `docs/Toko Kopi Tuku.html` (arsip homepage
 `https://www.tuku.coffee` — Next.js + Tailwind). Dipakai sebagai acuan visual
-"Tetangga Baca & Lo-Fi Craft" untuk situs **TAMAN BACA Jalosi Sanak Negeri**.
+"Tetangga Baca & Lo-Fi Craft" untuk situs **Taman Baca Jalosi Sanak Negeri**.
 
 ---
 
