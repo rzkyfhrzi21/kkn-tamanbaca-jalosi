@@ -20,7 +20,7 @@ include __DIR__ . '/../components/head.php';
         </div>
         <h1 class="font-headline-lg text-headline-lg text-deep-black mb-6 uppercase">
           Sapa Literasi<br/>
-          <span class="text-deep-black">dari Sanak</span><br/>
+          <span class="text-oren-terang">dari Sanak</span><br/>
           Negeri.
         </h1>
         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">

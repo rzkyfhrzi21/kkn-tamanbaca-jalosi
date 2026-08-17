@@ -22,7 +22,7 @@ include __DIR__ . '/../components/head.php';
 </div>
 <h1 class="font-headline-lg text-headline-lg text-deep-black uppercase leading-tight relative inline-block">
             Sumbang Buku,<br/>
-<span class="text-deep-black">Tebar Ilmu.</span>
+<span class="text-oren-terang">Tebar Ilmu.</span>
 <svg class="absolute -bottom-4 right-0 w-24 h-6 text-sticker-green" fill="none" viewbox="0 0 100 20">
 <path d="M5 15Q30 5 50 10T95 5" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
 </svg>

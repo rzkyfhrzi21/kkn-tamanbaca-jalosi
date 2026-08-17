@@ -23,7 +23,7 @@ include __DIR__ . '/../components/head.php';
 </div>
 <h1 class="font-headline-lg text-headline-lg text-deep-black mb-6 uppercase">
             Akar<br/>
-<span class="text-deep-black">Pengetahuan</span><br/>
+<span class="text-oren-terang">Pengetahuan</span><br/>
             Lokal.
           </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">
