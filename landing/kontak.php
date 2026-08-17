@@ -21,15 +21,15 @@ include __DIR__ . '/../components/head.php';
           Mari Berkunjung ke <br/>
 <span class="bg-cream-terang text-on-primary px-2 inline-block border-2 border-deep-black shadow-[6px_6px_0px_0px_#000101] transform rotate-1">Jalosi Sanak</span>
 </h1>
-<p class="font-body-lg text-on-surface-variant max-w-lg border-l-4 border-primary pl-4">
+<p class="font-body-lg text-on-surface-variant max-w-lg border-l-4 border-deep-black pl-4">
           Temukan lokasi kami, lihat jadwal operasional, dan jangan ragu untuk menghubungi kami jika ada pertanyaan. Kami senang menyambut Anda.
         </p>
 <div class="flex flex-wrap gap-4 pt-4">
-<a class="group flex items-center gap-2 bg-deep-black text-footer-bg border-2 border-deep-black hover:bg-transparent hover:text-deep-black transition-all px-6 py-3 font-handwriting uppercase tracking-widest shadow-[4px_4px_0px_0px_#C1AF91]" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<a class="group flex items-center gap-2 bg-deep-black text-footer-bg border-2 border-deep-black hover:bg-transparent hover:text-deep-black transition-all px-6 py-3 font-handwriting uppercase tracking-widest shadow-[4px_4px_0px_0px_#f4e0c0]" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-xl group-hover:animate-bounce">chat</span>
 <span>WhatsApp</span>
 </a>
-<a class="group flex items-center gap-2 bg-transparent text-deep-black border-2 border-deep-black hover:bg-primary-container hover:border-primary-container transition-all px-6 py-3 font-handwriting uppercase tracking-widest shadow-[4px_4px_0px_0px_#000101]" href="mailto:info@jalosisanak.org">
+<a class="group flex items-center gap-2 bg-transparent text-deep-black border-2 border-deep-black hover:bg-cream-terang hover:border-cream-terang transition-all px-6 py-3 font-handwriting uppercase tracking-widest shadow-[4px_4px_0px_0px_#000101]" href="mailto:info@jalosisanak.org">
 <span class="material-symbols-outlined text-xl">mail</span>
 <span>Email Kami</span>
 </a>
@@ -45,7 +45,7 @@ include __DIR__ . '/../components/head.php';
 <div class="flex-1 w-full bg-cover bg-center cursor-crosshair" data-alt="A detailed map view showing a neighborhood in Air Kubang, Tanggamus, Lampung, Indonesia, with a prominent pin or marker indicating the location of SDN 3 Air Kubang. The map should have a slightly desaturated, vintage paper texture overlay, aligning with a tactile, brutalist aesthetic. The pin should be a bold, high-contrast black or vibrant sticker green. Street names should be visible but subtle. High contrast, sharp lines." data-location="SDN 3 Air Kubang" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbp5lNeFPUfubim0koMJd--edTke4c3aceRtJd82cyTYkDQj8KbFoqoWXjoAKBjL77mSWaX731pqufewK2zHzKRS72nKkYSFoZ5zbrlr5AtweUaEe0fryEBWpHFMt5DfbdQiw8xZI4Oh85e1kIp3nixMO55c8coH7V6r6i_BcegTWuUUViOPAN2fjK5xK0ZgQMtuY0jEcCI9KC_n4PNTXeui3PzbE0H1qz2P1KGVAiPWcMN9NxmIWr')"></div>
 <div class="absolute bottom-4 left-4 bg-footer-bg border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-3 max-w-[200px]">
 <p class="font-label-stamp text-deep-black text-[10px] uppercase mb-1">Jarak Terdekat</p>
-<p class="font-headline-sm text-deep-black">± 120m dari <br/><span class="text-primary underline decoration-2 underline-offset-4">SDN 3 Air Kubang</span></p>
+<p class="font-headline-sm text-deep-black">± 120m dari <br/><span class="text-deep-black underline decoration-2 underline-offset-4">SDN 3 Air Kubang</span></p>
 </div>
 </div>
 </div>
@@ -90,9 +90,9 @@ include __DIR__ . '/../components/head.php';
                     Kec. Air Naningan, Kab. Tanggamus,<br/>
                     Lampung 35384
                 </p>
-<button class="flex items-center gap-2 font-handwriting text-sm text-primary hover:text-deep-black transition-colors group">
+<button class="flex items-center gap-2 font-handwriting text-sm text-deep-black hover:text-deep-black transition-colors group">
 <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">content_copy</span>
-<span class="uppercase border-b border-primary group-hover:border-deep-black pb-0.5">Salin Alamat</span>
+<span class="uppercase border-b border-deep-black group-hover:border-deep-black pb-0.5">Salin Alamat</span>
 </button>
 </div>
 </div>
@@ -102,7 +102,7 @@ include __DIR__ . '/../components/head.php';
                 <span class="h-0.5 flex-grow bg-deep-black block"></span>
 </h2>
 <div class="space-y-6" id="faq-accordion">
-<details class="group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] open:bg-primary-container open:shadow-none transition-all duration-300">
+<details class="group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] open:bg-cream-terang open:shadow-none transition-all duration-300">
 <summary class="flex justify-between items-center cursor-pointer p-6 font-headline-sm text-deep-black uppercase hover:bg-surface-variant open:hover:bg-transparent transition-colors marker:content-['']">
 <span>Apakah perlu mendaftar untuk membaca di tempat?</span>
 <span class="material-symbols-outlined transform group-open:rotate-180 transition-transform duration-300">expand_more</span>
@@ -111,7 +111,7 @@ include __DIR__ . '/../components/head.php';
 <p>Tidak perlu. Anda bisa langsung datang dan membaca koleksi kami di area yang disediakan secara gratis selama jam operasional.</p>
 </div>
 </details>
-<details class="group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] open:bg-primary-container open:shadow-none transition-all duration-300">
+<details class="group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] open:bg-cream-terang open:shadow-none transition-all duration-300">
 <summary class="flex justify-between items-center cursor-pointer p-6 font-headline-sm text-deep-black uppercase hover:bg-surface-variant open:hover:bg-transparent transition-colors marker:content-['']">
 <span>Bagaimana cara meminjam buku untuk dibawa pulang?</span>
 <span class="material-symbols-outlined transform group-open:rotate-180 transition-transform duration-300">expand_more</span>
@@ -120,7 +120,7 @@ include __DIR__ . '/../components/head.php';
 <p>Untuk meminjam buku, Anda harus mendaftar sebagai anggota terlebih dahulu dengan membawa fotokopi KTP/Kartu Pelajar. Pendaftaran dan peminjaman buku sepenuhnya gratis, tanpa biaya administrasi bulanan.</p>
 </div>
 </details>
-<details class="group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] open:bg-primary-container open:shadow-none transition-all duration-300">
+<details class="group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] open:bg-cream-terang open:shadow-none transition-all duration-300">
 <summary class="flex justify-between items-center cursor-pointer p-6 font-headline-sm text-deep-black uppercase hover:bg-surface-variant open:hover:bg-transparent transition-colors marker:content-['']">
 <span>Apakah menerima donasi buku?</span>
 <span class="material-symbols-outlined transform group-open:rotate-180 transition-transform duration-300">expand_more</span>
@@ -129,7 +129,7 @@ include __DIR__ . '/../components/head.php';
 <p>Sangat menerima! Kami memprioritaskan buku anak, fiksi remaja, dan buku keterampilan praktis. Anda bisa mengantar langsung atau mengirim via kurir. Hubungi kami via WhatsApp untuk detail lebih lanjut.</p>
 </div>
 </details>
-<details class="group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] open:bg-primary-container open:shadow-none transition-all duration-300">
+<details class="group bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] open:bg-cream-terang open:shadow-none transition-all duration-300">
 <summary class="flex justify-between items-center cursor-pointer p-6 font-headline-sm text-deep-black uppercase hover:bg-surface-variant open:hover:bg-transparent transition-colors marker:content-['']">
 <span>Bisakah mengadakan acara komunitas di sini?</span>
 <span class="material-symbols-outlined transform group-open:rotate-180 transition-transform duration-300">expand_more</span>

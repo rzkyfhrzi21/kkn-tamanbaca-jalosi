@@ -11,7 +11,7 @@ include __DIR__ . '/../components/head.php';
 <!-- Hero Section -->
 <section class="w-full bg-surface border-b-2 border-deep-black py-20 relative overflow-hidden" style="background-image: linear-gradient(rgba(248,250,249,0.88), rgba(248,250,249,0.88)), url('assets/images/hero-beranda.png'); background-size: cover; background-position: center center;">
   <div class="absolute top-0 right-0 w-64 h-64 bg-surface-variant rounded-full blur-3xl opacity-50 -mr-20 -mt-20"></div>
-  <div class="absolute bottom-0 left-10 w-96 h-96 bg-primary-container rounded-full blur-3xl opacity-30 -mb-20"></div>
+  <div class="absolute bottom-0 left-10 w-96 h-96 bg-cream-terang rounded-full blur-3xl opacity-30 -mb-20"></div>
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-center">
       <div class="lg:col-span-7 flex flex-col items-start">
@@ -20,7 +20,7 @@ include __DIR__ . '/../components/head.php';
         </div>
         <h1 class="font-headline-lg text-headline-lg text-deep-black mb-6 uppercase">
           Sapa Literasi<br/>
-          <span class="text-primary">dari Sanak</span><br/>
+          <span class="text-deep-black">dari Sanak</span><br/>
           Negeri.
         </h1>
         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">
@@ -127,7 +127,7 @@ include __DIR__ . '/../components/head.php';
           <div class="bg-cream-terang px-3 py-1 border-2 border-deep-black">
             <span class="font-label-stamp text-label-stamp text-on-primary uppercase tracking-widest">Koleksi</span>
           </div>
-          <span class="material-symbols-outlined text-outline text-4xl group-hover:text-primary transition-colors">local_library</span>
+          <span class="material-symbols-outlined text-outline text-4xl group-hover:text-deep-black transition-colors">local_library</span>
         </div>
         <h3 class="font-headline-sm text-headline-sm text-deep-black mb-4">Dari Sepuluh Buku Bekas</h3>
         <p class="font-body-sm text-body-sm text-on-surface-variant">

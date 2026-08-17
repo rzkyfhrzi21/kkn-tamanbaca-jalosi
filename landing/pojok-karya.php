@@ -48,7 +48,7 @@ include __DIR__ . '/../components/head.php';
 </div>
 </div>
 <div class="break-inside-avoid bg-surface border border-deep-black shadow-[4px_4px_0px_0px_rgba(0,1,1,1)] relative p-4 flex flex-col gap-3 group hover:-translate-y-1 transition-transform">
-<span class="absolute -bottom-3 -right-3 bg-coffee-accent border border-deep-black px-3 py-1 font-label-stamp text-deep-black -rotate-3 shadow-[2px_2px_0px_0px_rgba(0,1,1,1)] z-10">FOTO</span>
+<span class="absolute -bottom-3 -right-3 bg-cream-terang border border-deep-black px-3 py-1 font-label-stamp text-deep-black -rotate-3 shadow-[2px_2px_0px_0px_rgba(0,1,1,1)] z-10">FOTO</span>
 <div class="w-full aspect-[3/4] bg-surface-container-high border border-deep-black flex items-center justify-center overflow-hidden">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Black and white documentary-style photograph of children huddled together reading a large illustrated book. They are sitting on a woven bamboo mat outdoors. High contrast, sharp focus on their concentrated faces, deep shadows. Brutalist, authentic feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkjj7opOKhcR9Sn2IZyoHRzsaTQe_ZnM8o7iSyOmriFlYDMPsfaduuivm5dYW6Gn4ScTCaPOE9wIhLrZhiy-uaHGwGuGXbm1BMrV1Y0kSH--WpanM8hdRAgj9Gt2MLMfx2tZAjOG88vUgGZC2DlUwHMN5QcV_mv8UYAaai2k5xPj0iRoUHKav5YjPK_Of9fgbmZN7BgUMxtcbNpoqOWpHVQ2IesXLicywUqji9TJywpJgfwYkhRR4q"/>
 </div>

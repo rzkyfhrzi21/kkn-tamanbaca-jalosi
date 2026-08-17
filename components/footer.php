@@ -43,8 +43,8 @@
       </div>
     </div>
     <div class="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-baseline gap-x-6 gap-y-2 font-label-mono text-[14px] text-deep-black uppercase tracking-widest border-t border-outline-variant pt-8 mt-12">
-      <a class="hover:text-primary" href="kontak">Privasi</a>
-      <a class="hover:text-primary" href="kontak">Ketentuan</a>
+      <a class="hover:text-deep-black" href="kontak">Privasi</a>
+      <a class="hover:text-deep-black" href="kontak">Ketentuan</a>
       <p>&copy; <?= date('Y') ?> Taman Baca Jalosi Sanak Negeri.</p>
     </div>
   </div>

@@ -13,7 +13,7 @@ include __DIR__ . '/../components/head.php';
 <section class="w-full bg-surface border-b-2 border-deep-black py-20 relative overflow-hidden">
 <!-- Decorative background elements -->
 <div class="absolute top-0 right-0 w-64 h-64 bg-surface-variant rounded-full blur-3xl opacity-50 -mr-20 -mt-20"></div>
-<div class="absolute bottom-0 left-10 w-96 h-96 bg-primary-container rounded-full blur-3xl opacity-30 -mb-20"></div>
+<div class="absolute bottom-0 left-10 w-96 h-96 bg-cream-terang rounded-full blur-3xl opacity-30 -mb-20"></div>
 <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-center">
 <div class="lg:col-span-7 flex flex-col items-start">
@@ -23,7 +23,7 @@ include __DIR__ . '/../components/head.php';
 </div>
 <h1 class="font-headline-lg text-headline-lg text-deep-black mb-6 uppercase">
             Akar<br/>
-<span class="text-primary">Pengetahuan</span><br/>
+<span class="text-deep-black">Pengetahuan</span><br/>
             Lokal.
           </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">
@@ -68,7 +68,7 @@ include __DIR__ . '/../components/section-header.php';
 <div class="bg-cream-terang px-3 py-1 border-2 border-deep-black">
 <span class="font-label-stamp text-label-stamp text-on-primary uppercase tracking-widest">Visi</span>
 </div>
-<span class="material-symbols-outlined text-outline text-4xl group-hover:text-primary transition-colors">visibility</span>
+<span class="material-symbols-outlined text-outline text-4xl group-hover:text-deep-black transition-colors">visibility</span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-deep-black mb-4">Mewujudkan Masyarakat Literat</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant max-w-lg">
@@ -95,7 +95,7 @@ include __DIR__ . '/../components/section-header.php';
 </div>
 </div>
 <!-- Misi Image Card -->
-<div class="konten-card lg:col-span-2 relative bg-primary-container border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] overflow-hidden min-h-[250px]">
+<div class="konten-card lg:col-span-2 relative bg-cream-terang border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] overflow-hidden min-h-[250px]">
 <div class="absolute inset-0 bg-cover bg-center mix-blend-multiply opacity-80" data-alt="Close up shot of hands passing a worn book over a rustic wooden table, overhead angle, strong shadows, brutalist photography style, earthy tones, community sharing concept." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv05L6AKh-q30tbHZyvfjNjqWkCbJaTWUIEprsJnZhHEiU2rJL4Pal8SuBbdUQOjiBjV3JHDXwFSsl9CnxTrNMXTd2mXmQp1aNCkF7koVA39t_-k_ihgGcXCJte4HHaQAKW3Kz8WEQMRnVRKVJ34yrAEsdrTkCiEVjtFZF3I8Gt4xwTJ5IHNigrPR3DCIqDA5mA0n_uPKhiwjQhZ5lL7Cy7dS9I5pqdAlw3E8STpHydd5rPSBkGd-A')">
 </div>
 <div class="relative z-10 p-8 h-full flex flex-col justify-end bg-gradient-to-t from-deep-black/80 to-transparent">
@@ -120,7 +120,7 @@ include __DIR__ . '/../components/section-header.php';
 <!-- Inline SVG Data Viz (Decorative abstract progress) -->
 <svg class="w-48 h-48 mb-8 transform -rotate-90" viewbox="0 0 100 100">
 <circle class="stroke-surface-variant" cx="50" cy="50" fill="none" r="45" stroke-width="8"></circle>
-<circle class="stroke-primary" cx="50" cy="50" fill="none" r="45" stroke-dasharray="282.7" stroke-dashoffset="60" stroke-width="8" style="transition: stroke-dashoffset 1.5s ease-in-out;"></circle>
+<circle class="stroke-deep-black" cx="50" cy="50" fill="none" r="45" stroke-dasharray="282.7" stroke-dashoffset="60" stroke-width="8" style="transition: stroke-dashoffset 1.5s ease-in-out;"></circle>
 <text class="font-label-mono text-[16px] fill-deep-black font-bold" dominant-baseline="middle" text-anchor="middle" x="50" y="50" transform="rotate(90 50 50)">1.5K+</text>
 </svg>
 <div class="text-center">
@@ -185,7 +185,7 @@ include __DIR__ . '/../components/section-header.php';
 </div>
 <span class="font-label-mono text-[11px] text-on-surface-variant uppercase tracking-widest">29 Sep 2023</span>
 </div>
-<span class="material-symbols-outlined text-outline text-4xl group-hover:text-primary transition-colors mb-4">newspaper</span>
+<span class="material-symbols-outlined text-outline text-4xl group-hover:text-deep-black transition-colors mb-4">newspaper</span>
 <h3 class="font-headline-sm text-headline-sm text-deep-black mb-3">Tamar Widadi, Pendiri Rumah Baca Sanak Negeri di Air Naningan Lampung</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-6">Wawancara radio Idola bersama Tamar soal literasi gratis dan ruang belajar bagi anak-anak pelosok kampung sejak 2015, lengkap dengan podcast.</p>
 <div class="flex items-center gap-2 font-label-mono text-label-mono text-deep-black uppercase tracking-widest border-t-2 border-deep-black pt-4 mt-6">
@@ -200,7 +200,7 @@ Baca Berita
 </div>
 <span class="font-label-mono text-[11px] text-on-surface-variant uppercase tracking-widest">05 Jul 2026</span>
 </div>
-<span class="material-symbols-outlined text-outline text-4xl group-hover:text-primary transition-colors mb-4">rss_feed</span>
+<span class="material-symbols-outlined text-outline text-4xl group-hover:text-deep-black transition-colors mb-4">rss_feed</span>
 <h3 class="font-headline-sm text-headline-sm text-deep-black mb-3">Dari Rumah Bata, Tamar Menumbuhkan Literasi Anak-anak di Pelosok Tanggamus</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-6">Feature Lampung Geh: rumah bata sederhana jadi ruang belajar, bermain, dan edukasi konservasi yang dinikmati puluhan anak tiap pekan.</p>
 <div class="flex items-center gap-2 font-label-mono text-label-mono text-deep-black uppercase tracking-widest border-t-2 border-deep-black pt-4 mt-6">

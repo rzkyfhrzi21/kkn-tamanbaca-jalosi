@@ -43,46 +43,46 @@ include __DIR__ . '/../components/head.php';
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="bg-surface border border-deep-black p-8 shadow-[4px_4px_0px_0px_#000101] relative group hover:-translate-y-1 transition-transform">
 <div class="absolute top-4 right-4 bg-sticker-green text-deep-black font-label-stamp px-2 py-1 border border-deep-black">DASAR</div>
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="material-symbols-outlined text-4xl text-deep-black mb-6 block" style="font-variation-settings: 'FILL' 1;">menu_book</span>
 <h3 class="font-headline-sm text-deep-black mb-4 uppercase">Literasi Membaca</h3>
 <p class="font-body-sm text-on-surface-variant mb-6">Fokus pada peningkatan minat baca dan pemahaman teks melalui metode bercerita, bedah buku, dan perpustakaan keliling.</p>
 <ul class="space-y-3 font-label-mono text-sm text-deep-black">
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Dongeng Akhir Pekan</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Kelas Menulis Kreatif</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Peminjaman Buku Gratis</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Dongeng Akhir Pekan</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Kelas Menulis Kreatif</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Peminjaman Buku Gratis</li>
 </ul>
 </div>
 <div class="bg-surface border border-deep-black p-8 shadow-[4px_4px_0px_0px_#000101] relative group hover:-translate-y-1 transition-transform">
-<div class="absolute top-4 right-4 bg-primary-fixed-dim text-deep-black font-label-stamp px-2 py-1 border border-deep-black">TERAPAN</div>
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block" style="font-variation-settings: 'FILL' 1;">devices</span>
+<div class="absolute top-4 right-4 bg-cream-terang text-deep-black font-label-stamp px-2 py-1 border border-deep-black">TERAPAN</div>
+<span class="material-symbols-outlined text-4xl text-deep-black mb-6 block" style="font-variation-settings: 'FILL' 1;">devices</span>
 <h3 class="font-headline-sm text-deep-black mb-4 uppercase">Komputer & Yayasan IAR Indonesia</h3>
 <p class="font-body-sm text-on-surface-variant mb-6">Pengenalan teknologi dasar, edukasi Internet Aman untuk Remaja, dan pengoperasian perangkat lunak produktivitas.</p>
 <ul class="space-y-3 font-label-mono text-sm text-deep-black">
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ketik 10 Jari</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Dasar Microsoft Office</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Literasi Digital Yayasan IAR Indonesia</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Ketik 10 Jari</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Dasar Microsoft Office</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Literasi Digital Yayasan IAR Indonesia</li>
 </ul>
 </div>
 <div class="bg-surface border border-deep-black p-8 shadow-[4px_4px_0px_0px_#000101] relative group hover:-translate-y-1 transition-transform">
 <div class="absolute top-4 right-4 bg-tertiary-fixed text-deep-black font-label-stamp px-2 py-1 border border-deep-black">KREATIF</div>
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block" style="font-variation-settings: 'FILL' 1;">palette</span>
+<span class="material-symbols-outlined text-4xl text-deep-black mb-6 block" style="font-variation-settings: 'FILL' 1;">palette</span>
 <h3 class="font-headline-sm text-deep-black mb-4 uppercase">Seni & Tari</h3>
 <p class="font-body-sm text-on-surface-variant mb-6">Melestarikan budaya lokal melalui kelas tari tradisional dan mengembangkan kreativitas lewat seni rupa terapan.</p>
 <ul class="space-y-3 font-label-mono text-sm text-deep-black">
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Tari Tradisional Daerah</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Kerajinan Tangan Daur Ulang</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Pameran Karya Bulanan</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Tari Tradisional Daerah</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Kerajinan Tangan Daur Ulang</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Pameran Karya Bulanan</li>
 </ul>
 </div>
 <div class="bg-surface border border-deep-black p-8 shadow-[4px_4px_0px_0px_#000101] relative group hover:-translate-y-1 transition-transform">
 <div class="absolute top-4 right-4 bg-sticker-green text-deep-black font-label-stamp px-2 py-1 border border-deep-black">ALAM</div>
-<span class="material-symbols-outlined text-4xl text-primary mb-6 block" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="material-symbols-outlined text-4xl text-deep-black mb-6 block" style="font-variation-settings: 'FILL' 1;">eco</span>
 <h3 class="font-headline-sm text-deep-black mb-4 uppercase">Konservasi Lingkungan</h3>
 <p class="font-body-sm text-on-surface-variant mb-6">Pendidikan kesadaran lingkungan, pengelolaan sampah mandiri, dan pengenalan flora/fauna lokal.</p>
 <ul class="space-y-3 font-label-mono text-sm text-deep-black">
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Bank Sampah Mini</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ekspedisi Alam Sekitar</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Kebun Sayur Komunitas</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Bank Sampah Mini</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Ekspedisi Alam Sekitar</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-deep-black text-sm">check_circle</span> Kebun Sayur Komunitas</li>
 </ul>
 </div>
 </div>

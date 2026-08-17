@@ -22,7 +22,7 @@ include __DIR__ . '/../components/head.php';
 </div>
 <h1 class="font-headline-lg text-headline-lg text-deep-black uppercase leading-tight relative inline-block">
             Sumbang Buku,<br/>
-<span class="text-primary">Tebar Ilmu.</span>
+<span class="text-deep-black">Tebar Ilmu.</span>
 <svg class="absolute -bottom-4 right-0 w-24 h-6 text-sticker-green" fill="none" viewbox="0 0 100 20">
 <path d="M5 15Q30 5 50 10T95 5" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
 </svg>
@@ -42,7 +42,7 @@ include __DIR__ . '/../components/head.php';
 <ul class="space-y-4">
 <li class="flex items-center justify-between group cursor-pointer hover:bg-surface-container transition-colors p-2 -mx-2 rounded">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">auto_stories</span>
+<span class="material-symbols-outlined text-outline group-hover:text-deep-black transition-colors">auto_stories</span>
 <span class="font-label-mono text-label-mono text-deep-black uppercase">Ensiklopedia Anak</span>
 </div>
 <span class="bg-surface-container-high px-2 py-1 font-label-stamp text-[10px] text-deep-black border border-outline-variant">Tinggi</span>
@@ -50,7 +50,7 @@ include __DIR__ . '/../components/head.php';
 <li class="border-t border-outline-variant border-dashed"></li>
 <li class="flex items-center justify-between group cursor-pointer hover:bg-surface-container transition-colors p-2 -mx-2 rounded">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">book</span>
+<span class="material-symbols-outlined text-outline group-hover:text-deep-black transition-colors">book</span>
 <span class="font-label-mono text-label-mono text-deep-black uppercase">Novel Terjemahan Klasik</span>
 </div>
 <span class="bg-surface-container-high px-2 py-1 font-label-stamp text-[10px] text-deep-black border border-outline-variant">Sedang</span>
@@ -58,7 +58,7 @@ include __DIR__ . '/../components/head.php';
 <li class="border-t border-outline-variant border-dashed"></li>
 <li class="flex items-center justify-between group cursor-pointer hover:bg-surface-container transition-colors p-2 -mx-2 rounded">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">menu_book</span>
+<span class="material-symbols-outlined text-outline group-hover:text-deep-black transition-colors">menu_book</span>
 <span class="font-label-mono text-label-mono text-deep-black uppercase">Buku Keterampilan/Prakarya</span>
 </div>
 <span class="bg-sticker-green px-2 py-1 font-label-stamp text-[10px] text-deep-black border border-deep-black">Mendesak</span>
@@ -66,7 +66,7 @@ include __DIR__ . '/../components/head.php';
 <li class="border-t border-outline-variant border-dashed"></li>
 <li class="flex items-center justify-between group cursor-pointer hover:bg-surface-container transition-colors p-2 -mx-2 rounded">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">import_contacts</span>
+<span class="material-symbols-outlined text-outline group-hover:text-deep-black transition-colors">import_contacts</span>
 <span class="font-label-mono text-label-mono text-deep-black uppercase">Cerita Rakyat Nusantara</span>
 </div>
 <span class="bg-surface-container-high px-2 py-1 font-label-stamp text-[10px] text-deep-black border border-outline-variant">Sedang</span>

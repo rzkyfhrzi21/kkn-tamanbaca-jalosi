@@ -18,9 +18,9 @@ tailwind.config = {
         "on-error-container": "#93000a",
         "on-surface-variant": "#4c463d",
         "inverse-on-surface": "#f0f1f0",
-        "primary-container": "#c1af91",
+        
         "secondary": "#5f5e5d",
-        "coffee-accent": "#C1AF91",
+        
         "secondary-fixed": "#e4e2e0",
         "surface-dim": "#d9dad9",
         "on-secondary": "#ffffff",
@@ -38,7 +38,7 @@ tailwind.config = {
         "surface-bright": "#f8faf9",
         "on-tertiary-fixed-variant": "#3d4c00",
         "footer-bg": "#FEFFFE",
-        "primary-fixed-dim": "#d7c4a5",
+        
         "on-secondary-fixed-variant": "#474746",
         "on-tertiary": "#ffffff",
         "on-secondary-fixed": "#1b1c1b",
@@ -46,7 +46,7 @@ tailwind.config = {
         "on-primary": "#ffffff",
         "outline-variant": "#cfc5b9",
         "surface-container-highest": "#e1e3e2",
-        "inverse-primary": "#d7c4a5",
+        
         "surface-container-lowest": "#ffffff",
         "on-primary-fixed-variant": "#52452d",
         "error-container": "#ffdad6",
@@ -64,7 +64,7 @@ tailwind.config = {
         "tertiary-fixed": "#d2ee74",
         "header-bg": "#4B4B4A",
         "tertiary-fixed-dim": "#b7d25b",
-        "cream": "#C1AF91",
+        
         "hijau-stabilo": "#BBD65F",
         "hitam": "#000101",
         "putih": "#FEFFFE",
