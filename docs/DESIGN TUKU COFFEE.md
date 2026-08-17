@@ -63,13 +63,27 @@ Class Tailwind kita → font family (sudah diterapkan di `tailwind-config.js` + 
 | `font-body-lg` / `font-body-sm` | **sub_head** | Paragraf / isi |
 | `font-label-mono` | **sub_head** | Meta, label kecil, info |
 
-Kedua font di-self-host di project:
+Kedua font di-self-host di project (`assets/fonts/`):
 
-- `assets/fonts/tuku-sub-head.otf`
-- `assets/fonts/tuku-handwriting.woff`
+- `assets/fonts/tuku-sub-head.otf`  → **Tuku Sub Head** (body/default)
+- `assets/fonts/tuku-handwriting.woff` → **Tuku Handwriting** (display/headline)
 
-Definisi `@font-face` ada di `assets/css/fonts.css` (fallback = `local('Arial')` +
-metric override dari referensi), dan di-link dari `components/head.php`.
+### Tabel CDN & File Lokal (untuk disalin / di-copy)
+
+| Font | CDN URL (sumber kedua) | File lokal (self-host) |
+|---|---|---|
+| `__tuku_sub_head_6d0d6c` (Tuku Sub Head) | `https://www.tuku.coffee/_next/static/media/8207272fb7fc6346-s.p.otf` | `D:\Apps\laragon-6.0.0\www\kkn-tamanbaca\assets\fonts\tuku-sub-head.otf` |
+| `__tuku_handwriting_c420db` (Tuku Handwriting) | `https://www.tuku.coffee/_next/static/media/e5df4e3ee0c98d7c-s.p.woff` | `D:\Apps\laragon-6.0.0\www\kkn-tamanbaca\assets\fonts\tuku-handwriting.woff` |
+
+Cara kerja `@font-face` (`assets/css/fonts.css`): browser pakai **file lokal dulu**,
+jika gagal memuat → otomatis fallback ke **CDN tuku.coffee** (CORS terbuka,
+`Content-Type` font/otf & font/woff, cache immutable 1 tahun). Fallback terakhir =
+`local('Arial')` + metric override dari referensi.
+
+Definisi `@font-face` ada di `assets/css/fonts.css`, di-link dari `components/head.php`
+(`<link rel="stylesheet" href="assets/css/fonts.css"/>`), dan pemetaan class Tailwind
+(`font-headline-*`, `font-body-*`, `font-label-mono`, `font-handwriting`) ada di config
+inline `head.php` (sinkron dengan `assets/js/tailwind-config.js`).
 
 ---
 

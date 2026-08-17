@@ -25,6 +25,9 @@ RewriteRule ^(docs|@agents|Zzz|\.git|\.rtk|\.codebase-memory)(/|$) - [F,L]
 <FilesMatch "\.(md|txt|log|json|env|sql)$">
   Require all denied
 </FilesMatch>
+<Files "robots.txt">
+  Require all granted
+</Files>
 <FilesMatch "^\.">
   Order Deny,Allow
   Deny from all

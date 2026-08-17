@@ -9,7 +9,7 @@ include __DIR__ . '/../components/head.php';
 <main class="w-full pt-20 min-h-screen">
 <div class="flex flex-col w-full">
 <!-- Hero Section -->
-<section class="w-full bg-surface border-b-2 border-deep-black py-16 lg:py-32 relative overflow-hidden">
+<section class="w-full bg-surface border-b-2 border-deep-black py-20 relative overflow-hidden">
   <div class="absolute top-0 right-0 w-64 h-64 bg-surface-variant rounded-full blur-3xl opacity-50 -mr-20 -mt-20"></div>
   <div class="absolute bottom-0 left-10 w-96 h-96 bg-primary-container rounded-full blur-3xl opacity-30 -mb-20"></div>
   <div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">

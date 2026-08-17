@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Disallow: /landing/
+Disallow: /components/
+Disallow: /docs/
+Disallow: /@agents/
+Disallow: /Zzz/
+Disallow: /assets/
+Disallow: /\.codebase-memory/
+Disallow: /\.git/
+Disallow: /\.rtk/
+
+Sitemap: https://tbjalosi.web.id/sitemap.xml
