@@ -90,5 +90,6 @@ document.addEventListener("click", function (e) {
   }
 });
 </script>
+<script src="assets/js/security-warning.js"></script>
 </body>
 </html>
