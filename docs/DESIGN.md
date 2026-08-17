@@ -12,7 +12,7 @@ Mengadaptasi DNA visual dan filosofi branding khas **Toko Kopi TUKU** (*tuku.cof
 1. **Otentik, Rendah Hati & Tidak Pretensius (*Lo-Fi & Grounded*):**
    * Tampilan yang jujur, bersih, dan membumi. Menghindari efek 3D glossy atau animasi berlebihan; mengutamakan kesederhanaan cetak kertas kraft, stempel komunitas, dan tipografi tegas.
 2. **Semangat Guyub & Kedekatan (*Neighborhood Spirit*):**
-   * Mengadopsi konsep sapaan akrab *"Tetangga TUKU"* menjadi **"#TamanBaca"** dan **"#SanakNegeri"** untuk menyapa siswa SDN 3 Air Kubang, orang tua, relawan, dan donatur.
+   * Mengadopsi konsep sapaan akrab *"Tetangga TUKU"* menjadi **"#TamanBacaMasyarakat"** dan **"#SanakNegeri"** untuk menyapa siswa SDN 3 Air Kubang, orang tua, relawan, dan donatur.
 3. **Estetika Kraft, Labeling & Stiker Kurasi:**
    * Kartu katalog buku, kartu program, dan pengumuman dirancang seperti kemasan kopi/kertas pembungkus TUKU: garis batas tegas (*crisp border* `border-2 border-deep-black`), label monospaced/caps, stempel tanggal pendirian ("EST. 17 JULI 2015"), stiker kurasi warna kontras, dan *hard shadow* brutalist (`shadow-[4px_4px_0px_0px_#000101]`).
 
@@ -93,7 +93,7 @@ Arsitektur PHP dengan komponen bersama: `components/head.php`, `header.php`, `se
 
 #### D. Footer ("Salam Hangat dari Air Naningan")
 * Latar **`#FEFFFE`** (`bg-footer-bg`), border atas `border-t-2 border-deep-black`, teks **`#000101`**.
-* **4 kolom ala Toko Kopi TUKU:** pojok kiri (Hubungi Kami + tombol share `sharePage()`), tengah kiri (Jam Operasional), tengah kanan (Kemitraan: "SDN 3 Air Kubang & Yayasan IAR Indonesia Partnership", "#TamanBaca"), pojok kanan (**card WA & email gaya TUKU** — nomor/alamat di atas + label bawah, link `wa.me/6281234567890` & `mailto:info@jalosisanak.org`, hover invert warna).
+* **4 kolom ala Toko Kopi TUKU:** pojok kiri (Hubungi Kami + tombol share `sharePage()`), tengah kiri (Jam Operasional), tengah kanan (Kemitraan: "SDN 3 Air Kubang & Yayasan IAR Indonesia Partnership", "#TamanBacaMasyarakat"), pojok kanan (**card WA & email gaya TUKU** — nomor/alamat di atas + label bawah, link `wa.me/6281234567890` & `mailto:info@jalosisanak.org`, hover invert warna).
 * **Baris bawah:** `Privasi / Ketentuan / © [tahun]` kecil, rata kiri, ukuran sama dengan konten di atas (`font-label-mono text-[14px] uppercase`).
 
 ---
