@@ -108,7 +108,7 @@ Lampung 35384
 </div>
 <!-- Volunteer CTA -->
 <div class="bg-inverse-surface text-inverse-on-surface p-8 relative border border-deep-black overflow-hidden group">
-<div class="absolute top-0 right-0 w-32 h-32 bg-primary rounded-bl-full opacity-20 -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+<div class="absolute top-0 right-0 w-32 h-32 bg-cream-terang rounded-bl-full opacity-20 -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
 <div class="relative z-10 space-y-6">
 <div class="w-12 h-12 bg-sticker-green flex items-center justify-center border border-deep-black">
 <span class="material-symbols-outlined text-deep-black">volunteer_activism</span>
@@ -117,7 +117,7 @@ Lampung 35384
 <p class="font-body-sm text-body-sm text-surface-variant">
               Bantu kami memilah, mendata, dan menata buku-buku donasi yang masuk. Tangan-tangan terampil sangat dibutuhkan!
             </p>
-<button class="w-full bg-primary text-on-primary font-handwriting text-label-mono py-3 px-6 uppercase tracking-wider border border-transparent hover:bg-transparent hover:border-outline hover:text-on-error transition-all flex items-center justify-center gap-2 relative">
+<button class="w-full bg-cream-terang text-on-primary font-handwriting text-label-mono py-3 px-6 uppercase tracking-wider border border-transparent hover:bg-transparent hover:border-outline hover:text-on-error transition-all flex items-center justify-center gap-2 relative">
                Daftar Sekarang
                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </button>

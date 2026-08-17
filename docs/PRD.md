@@ -1,15 +1,17 @@
 # Product Requirements Document (PRD)
 ## Project: Website Resmi Taman Bacaan Masyarakat (TBM) Jalosi Sanak Negeri
 ### Visual Design Benchmark: Toko Kopi TUKU (tuku.coffee) — Konsep "Tetangga Baca"
-### Version: 2.0.0 (Multi-Page Architecture with Landing Page Aggregator)
+### Version: 2.1.0 (Multi-Page Modular PHP + Shared Components)
 
 ---
 
 ### 1. Ringkasan Eksekutif & Arsitektur Website
 
-Website TBM Jalosi Sanak Negeri menggunakan arsitektur **Multi-Page Modular** yang terbagi menjadi dua level penyajian:
-1. **Beranda / Landing Page (`/`):** Berperan sebagai portal agregator ringkas (*curated teaser portal*). Menampilkan cuplikan informasi penting dari setiap modul dengan kuota terbatas (**maksimal 3–4 item per modul**) dan dilengkapi tombol navigasi *"Lihat Semua / Jelajahi Selengkapnya"*.
-2. **Halaman Khusus Modul (*Dedicated Module Pages*):** Halaman tersendiri untuk setiap modul yang menyajikan data secara lengkap, tidak dibatasi, dilengkapi filter pencarian mendalam, tabel jadwal, serta formulir interaktif.
+Website TBM Jalosi Sanak Negeri menggunakan arsitektur **Multi-Page Modular PHP** dengan komponen bersama (`components/`) dan 7 halaman publik (`landing/`):
+1. **Beranda (`/`):** Portal agregator ringkas (*curated teaser portal*). Menampilkan cuplikan dari setiap modul + tombol navigasi *"Lihat Semua / Jelajahi Selengkapnya"*.
+2. **Halaman Khusus Modul (`/tentang`, `/program`, `/katalog`, `/pojok-karya`, `/donasi`, `/kontak`):** Halaman tersendiri per modul dengan data lengkap, filter pencarian, dan formulir interaktif.
+
+> Routing & deploy: halaman disajikan dari `landing/*.php` (include `components/head.php`, `header.php`, `footer.php`). SEO aktif: `robots.txt`, `sitemap.xml`, meta/OG/Twitter, JSON-LD (lihat `docs/` brief SEO).
 
 ---
 
@@ -28,90 +30,79 @@ Website TBM Jalosi Sanak Negeri menggunakan arsitektur **Multi-Page Modular** ya
 
 ---
 
-### 3. Peta Situs & Aturan Tampilan (Landing Teaser vs. Full Page)
+### 3. Peta Situs (Slug Final)
 
 ```text
-├── 1. BERANDA (Landing Page - /)
-│   ├── Topbar Navigasi Multi-Halaman & Stamp EST. 2015
-│   ├── Hero Banner & 4 Quick Stats Barcode
-│   ├── [TEASER] 4 Pilar Program (4 Kartu Ringkas -> Link ke /program)
-│   ├── [TEASER] Sorotan Koleksi Buku (Maks. 4 Buku Pilihan -> Link ke /katalog)
-│   ├── [TEASER] Kisah Pendirian & Visi Misi Singkat (-> Link ke /tentang)
-│   ├── [TEASER] Sanak Negeri Berkarya & Galeri (Maks. 4 Karya Terbaru -> Link ke /karya)
-│   ├── [TEASER] Resi Donasi Cepat & Sapa Relawan (-> Link ke /donasi-relawan)
-│   └── Footer Espresso & Lokasi Ringkas (-> Link ke /kontak)
+├── 1. BERANDA (/) — Aggregator
+│   ├── Hero + Kartu FAKTA CEPAT (bg foto lokal, stempel EST. 17 JULI 2015, 4 metrik)
+│   ├── Kata Pendiri (-> /tentang)
+│   ├── Liputan Media teaser "Pernah Diliput Media" (Radio Idola 92.6 FM & Lampung Geh News)
+│   ├── [TEASER] 4 Pilar Program (-> /program)
+│   ├── [TEASER] Sorotan Koleksi Buku (-> /katalog)
+│   ├── [TEASER] Donasi "Kirim Buku, Kirim Harapan" (-> /donasi)
+│   └── Footer 4 kolom + card WA/email
 │
 ├── 2. TENTANG KAMI (/tentang) -> FULL CONTENT
-│   ├── Sejarah Lengkap (Perjalanan 2015-sekarang, dari 10 buku ke 1.500+ buku)
-│   ├── Profil Lengkap Pendiri & Pengelola (Bpk. Tamar Widadi, S.Pd.)
-│   ├── Visi, Misi, dan Falsafah Literasi Inklusif
-│   └── Dampak bagi Siswa SDN 3 Air Kubang & Pendidikan Luar Sekolah
+│   ├── Kisah Pendiri & Sejarah (2015-sekarang, 10 buku ke 1.500+ buku)
+│   ├── Visi & Misi
+│   ├── Impact & Timeline (SVG Total Koleksi 1.5K+)
+│   └── Liputan Media (2 berita resmi)
 │
-├── 3. PROGRAM & KEGIATAN (/program) -> FULL CONTENT
+├── 3. PROGRAM (/program) -> FULL CONTENT
 │   ├── [PROG-01] Literasi Membaca Bersama & Bedah Dongeng
 │   ├── [PROG-02] Kelas Komputer & Literasi Digital (Didukung Yayasan IAR)
 │   ├── [PROG-03] Sanggar Seni & Tari Sanak Negeri (Tradisional & Modern)
 │   ├── [PROG-04] Permainan Edukasi & Konservasi Alam
-│   ├── Tabel Jadwal Mingguan Lengkap (Senin - Minggu)
-│   └── Alur & Formulir Pendaftaran Kelas Siswa
+│   └── (Section Jadwal & Daftar dihapus sesuai keputusan final)
 │
-├── 4. KATALOG BUKU & FASILITAS (/katalog) -> FULL UNRESTRICTED
+├── 4. KATALOG BUKU (/katalog) -> FULL UNRESTRICTED
 │   ├── Live Search Input (Cari judul, penulis, topik)
-│   ├── Filter Kategori Lengkap (Dongeng, Pelajaran SD 1-6, Sains, Ensiklopedia, Novel)
-│   ├── Grid Koleksi Lengkap (Menampilkan seluruh database buku tanpa batas)
-│   ├── Detail Lokasi Rak Buku & Status Ketersediaan
-│   └── Panduan & Tata Tertib Peminjaman Buku
+│   ├── Filter Kategori (Anak-anak, Pelajaran, Sains & Alam, Sastra, Sejarah)
+│   ├── Grid Koleksi Lengkap + Detail Lokasi Rak & Status Ketersediaan
+│   └── Tombol aksi: Tanya Buku via WhatsApp
 │
-├── 5. POJOK KARYA & GALERI (/karya) -> FULL UNRESTRICTED
-│   ├── Galeri Dokumentasi Foto & Video Seluruh Kegiatan
-│   ├── Etalase Karya Anak: Puisi, Cerpen Mini, Gambar, dan Resensi Siswa
-│   └── Testimoni Lengkap Guru SDN 3 Air Kubang, Wali Murid, dan Pengunjung
+├── 5. POJOK KARYA (/pojok-karya) -> FULL UNRESTRICTED
+│   ├── Galeri Dokumentasi Foto & Video Kegiatan
+│   ├── Etalase Karya Anak: Puisi, Cerpen Mini, Gambar, Resensi
+│   └── Testimoni Guru SDN 3 Air Kubang, Wali Murid, Pengunjung
 │
-├── 6. DONASI & RELAWAN (/donasi-relawan) -> FULL WORKFLOW
-│   ├── Panduan Lengkap Donasi Buku Fisik (Wishlist Kategori & Spesifikasi)
+├── 6. DONASI (/donasi) -> FULL WORKFLOW
+│   ├── Panduan Donasi Buku Fisik (Wishlist Kategori & Spesifikasi)
 │   ├── Resi Pengiriman Paket Kurir ke Kediaman Bpk. Tamar Widadi di Tanggamus
 │   ├── Informasi Dukungan Operasional & Fasilitas
-│   └── Formulir Lengkap Pendaftaran Relawan / Pengajar Tamu
+│   └── Formulir Pendaftaran Relawan / Pengajar Tamu
 │
-└── 7. KONTAK & LOKASI (/kontak) -> FULL MAP & DETAILS
-    ├── Peta Interaktif & Petunjuk Arah Lengkap (Radius 120m dari SDN 3 Air Kubang)
-    ├── Informasi Jam Operasional Detail Hari ke Hari
-    ├── Kontak Langsung Pengelola (WhatsApp, Telepon, Email)
-    └── FAQ (Pertanyaan yang Sering Diajukan)
+└── 7. KONTAK (/kontak) -> FULL MAP & DETAILS
+    ├── Peta Interaktif & Petunjuk Arah (Radius 120m dari SDN 3 Air Kubang)
+    ├── Jam Operasional: Senin-Jumat 14:00-17:00, Sabtu 09:00-16:00, Minggu Libur
+    ├── Kontak Langsung: WhatsApp (+62 812 3456 7890), Email (info@jalosisanak.org)
+    └── FAQ (4 pertanyaan umum, `<details>`)
 ```
 
 ---
 
 ### 4. Spesifikasi Fungsional Tiap Halaman
 
-#### 4.1. Beranda / Landing Page (`index.html`)
-* **Batas Data:**
-  * Katalog: Menampilkan **4 buku rekomendasi** kurasi minggu ini + tombol CTA `Buka Katalog Lengkap (1.500+ Koleksi) ->`.
-  * Karya: Menampilkan **3-4 karya pilihan anak** + tombol CTA `Lihat Semua Karya & Galeri ->`.
-  * Program: Menampilkan **4 ringkasan kartu program** + tombol CTA `Pelajari Jadwal & Detail Program ->`.
-* **Tujuan:** Memberikan gambaran kilat (*high-level summary*) dengan ritme visual yang dinamis tanpa membuat pengunjung lelah *scrolling*.
+#### 4.1. Beranda / Landing Page (`landing/index.php`)
+* **Batas Data:** Sorotan koleksi & karya terbatas; program 4 kartu.
+* **Fitur:** Hero dengan background foto lokal + overlay krem + kartu **FAKTA CEPAT** (barcode style); section hover interaktif (bg berubah oren terang saat kursor di card konten); teaser Liputan Media; CTA donasi.
 
-#### 4.2. Halaman Katalog Buku (`katalog.html`)
-* **Fitur Utama:**
-  * Pencarian instan (*client-side search*) tanpa batas.
-  * Filter multi-kategori: *Semua (1.500+)*, *Cerita Anak*, *Buku Pelajaran SDN 3*, *Sains & Alam*, *Karya Sastra*, *Ensiklopedia*.
-  * Status ketersediaan: *Tersedia di Rak A1-B3* atau *Sedang Dibaca*.
-  * Tombol aksi: *Tanya Buku via WhatsApp*.
+#### 4.2. Halaman Katalog Buku (`landing/katalog.php`)
+* Pencarian instan (*client-side search*), filter multi-kategori, status ketersediaan (`Tersedia di Rak A1-B3` / `Sedang Dibaca`), tombol *Tanya Buku via WhatsApp*.
 
-#### 4.3. Halaman Program & Jadwal (`program.html`)
-* **Fitur Utama:**
-  * Breakdown kurikulum tiap program (sasaran usia, durasi, alat peraga yang digunakan).
-  * Lencana mitra resmi (Kolaborasi Yayasan IAR Indonesia & SDN 3 Air Kubang).
-  * Tabel jam belajar mingguan yang terstruktur.
+#### 4.3. Halaman Program (`landing/program.php`)
+* Breakdown kurikulum tiap program (sasaran usia, durasi, alat peraga), lencana mitra resmi (Yayasan IAR Indonesia & SDN 3 Air Kubang).
 
-#### 4.4. Halaman Donasi & Relawan (`donasi-relawan.html`)
-* **Fitur Utama:**
-  * Kotak Resi Kurir siap salin (Copy-to-Clipboard alamat pengiriman di Pekon Air Kubang).
-  * Wishlist buku terupdate (buku bacaan yang paling dibutuhkan anak SD).
-  * Formulir interaktif relawan: Nama, No. WA, Keahlian (Tari/Komputer/Mengajar), Pilihan Hari.
+#### 4.4. Halaman Donasi & Relawan (`landing/donasi.php`)
+* Kotak Resi Kurir siap salin (copy-to-clipboard alamat pengiriman), wishlist buku, formulir relawan (Nama, No. WA, Keahlian: Tari/Komputer/Mengajar, Pilihan Hari).
+
+#### 4.5. Halaman Kontak (`landing/kontak.php`)
+* Peta rute, jam operasional, FAQ, kontak WA/email, tombol share halaman.
 
 ---
 
 ### 5. Standard Non-Fungsional
-* **Navigasi Konsisten:** Setiap halaman memiliki Header & Footer identik dengan indikator status menu aktif (*active link state*).
-* **Kecepatan & Responsivitas:** Desain 100% responsif pada layar ponsel hingga desktop dengan arsitektur HTML terstruktur atau SPA router.
+* **Navigasi Konsisten:** Setiap halaman memakai `components/header.php` & `footer.php` identik dengan indikator menu aktif + hover `text-oren`.
+* **Kecepatan & Responsivitas:** 100% responsif (mobile fullscreen menu, grid adaptif). Font di-self-host (`assets/fonts/`) agar tidak bergantung CDN.
+* **SEO & Indexing:** Meta description/title unik per halaman, canonical, OG/Twitter, JSON-LD, `robots.txt` (blokir `/landing`, `/components`, `/docs`, rute privat), `sitemap.xml` — target verifikasi Google Search Console via DNS CNAME (domain `tbjalosi.web.id`).
+* **Pemeliharaan Palet:** Warna memakai token Tailwind (lihat `docs/COLOR.txt` & `docs/DESIGN.md`); logo & aset gambar lokal di `assets/images/`.

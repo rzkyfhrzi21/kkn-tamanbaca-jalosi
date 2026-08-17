@@ -55,12 +55,12 @@ include __DIR__ . '/../components/head.php';
 <div class="bg-surface border border-deep-black p-8 shadow-[4px_4px_0px_0px_#000101] relative group hover:-translate-y-1 transition-transform">
 <div class="absolute top-4 right-4 bg-primary-fixed-dim text-deep-black font-label-stamp px-2 py-1 border border-deep-black">TERAPAN</div>
 <span class="material-symbols-outlined text-4xl text-primary mb-6 block" style="font-variation-settings: 'FILL' 1;">devices</span>
-<h3 class="font-headline-sm text-deep-black mb-4 uppercase">Komputer & IAR</h3>
-<p class="font-body-sm text-on-surface-variant mb-6">Pengenalan teknologi dasar, Internet Aman untuk Remaja (IAR), dan pengoperasian perangkat lunak produktivitas.</p>
+<h3 class="font-headline-sm text-deep-black mb-4 uppercase">Komputer & Yayasan IAR Indonesia</h3>
+<p class="font-body-sm text-on-surface-variant mb-6">Pengenalan teknologi dasar, edukasi Internet Aman untuk Remaja, dan pengoperasian perangkat lunak produktivitas.</p>
 <ul class="space-y-3 font-label-mono text-sm text-deep-black">
 <li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ketik 10 Jari</li>
 <li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Dasar Microsoft Office</li>
-<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Literasi Digital IAR</li>
+<li class="flex items-center gap-2 border-b border-surface-variant pb-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Literasi Digital Yayasan IAR Indonesia</li>
 </ul>
 </div>
 <div class="bg-surface border border-deep-black p-8 shadow-[4px_4px_0px_0px_#000101] relative group hover:-translate-y-1 transition-transform">

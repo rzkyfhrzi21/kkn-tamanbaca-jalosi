@@ -65,7 +65,7 @@ include __DIR__ . '/../components/section-header.php';
 <!-- Visi Card (Large) -->
 <div class="konten-card lg:col-span-2 bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between group hover:-translate-y-1 transition-transform">
 <div class="flex justify-between items-start mb-12">
-<div class="bg-primary px-3 py-1 border-2 border-deep-black">
+<div class="bg-cream-terang px-3 py-1 border-2 border-deep-black">
 <span class="font-label-stamp text-label-stamp text-on-primary uppercase tracking-widest">Visi</span>
 </div>
 <span class="material-symbols-outlined text-outline text-4xl group-hover:text-primary transition-colors">visibility</span>
@@ -151,7 +151,7 @@ include __DIR__ . '/../components/section-header.php';
 </div>
 <div>
 <h4 class="font-headline-sm text-headline-sm text-deep-black uppercase">Kolaborasi Konservasi</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Berkolaborasi dengan Yayasan Inisiasi Alam Rehabilitasi Indonesia (YIARI), kegiatan berkembang mencakup edukasi lingkungan dan satwa liar seperti kukang lewat permainan dan kreativitas.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Berkolaborasi dengan Yayasan IAR Indonesia (YIARI), kegiatan berkembang mencakup edukasi lingkungan dan satwa liar seperti kukang lewat permainan dan kreativitas.</p>
 </div>
 </div>
 <div class="w-0.5 h-8 bg-deep-black ml-4 opacity-20"></div>

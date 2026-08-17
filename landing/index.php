@@ -27,7 +27,7 @@ include __DIR__ . '/../components/head.php';
           Tempat berkumpul, bercerita, dan tumbuh bersama di Pekon Air Kubang. Menyemai benih pengetahuan dari desa untuk dunia.
         </p>
         <div class="flex items-center gap-4 flex-wrap">
-          <a class="bg-primary text-on-primary font-handwriting text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all duration-200" href="donasi">
+          <a class="bg-cream-terang text-on-primary font-handwriting text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all duration-200" href="donasi">
             Dukung Kami
           </a>
           <a class="font-handwriting text-label-mono text-deep-black uppercase tracking-wider border-2 border-deep-black px-6 py-3 hover:bg-sticker-green transition-colors" href="program">
@@ -37,7 +37,7 @@ include __DIR__ . '/../components/head.php';
       </div>
       <div class="lg:col-span-5 relative">
         <div class="bg-surface-container-lowest border-2 border-deep-black shadow-[8px_8px_0px_0px_#000101] p-6 relative">
-          <div class="absolute -top-3 -right-3 bg-primary text-on-primary font-label-stamp text-label-stamp px-2 py-1 border-2 border-deep-black transform rotate-6">
+          <div class="absolute -top-3 -right-3 bg-cream-terang text-on-primary font-label-stamp text-label-stamp px-2 py-1 border-2 border-deep-black transform rotate-6">
             FAKTA CEPAT
           </div>
           <div class="flex flex-col gap-4 font-label-mono text-label-mono text-deep-black uppercase">
@@ -74,7 +74,7 @@ include __DIR__ . '/../components/head.php';
             </div>
             <div class="flex justify-between items-center border-b border-deep-black/20 pb-2">
               <span class="">Lokasi</span>
-              <span class="font-bold">±120m dr SDN 3</span>
+              <span class="font-bold">±120m dr SDN 3 Air Kubang</span>
             </div>
             <div class="flex justify-between items-center">
               <span class="">Program Aktif</span>
@@ -124,7 +124,7 @@ include __DIR__ . '/../components/head.php';
       </div>
       <div class="konten-card bg-surface border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-8 flex flex-col justify-between group hover:-translate-y-1 transition-transform">
         <div class="flex justify-between items-start mb-12">
-          <div class="bg-primary px-3 py-1 border-2 border-deep-black">
+          <div class="bg-cream-terang px-3 py-1 border-2 border-deep-black">
             <span class="font-label-stamp text-label-stamp text-on-primary uppercase tracking-widest">Koleksi</span>
           </div>
           <span class="material-symbols-outlined text-outline text-4xl group-hover:text-primary transition-colors">local_library</span>
@@ -177,7 +177,7 @@ include __DIR__ . '/../components/head.php';
     ?>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="bg-surface-variant border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] p-6 flex flex-col group hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#000101] transition-all">
-        <div class="w-12 h-12 bg-primary border border-deep-black flex items-center justify-center rounded-full mb-6 text-on-primary shadow-[2px_2px_0px_0px_#000101]">
+        <div class="w-12 h-12 bg-cream-terang border border-deep-black flex items-center justify-center rounded-full mb-6 text-on-primary shadow-[2px_2px_0px_0px_#000101]">
           <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
         </div>
         <h3 class="font-headline-sm text-headline-sm text-deep-black mb-3 uppercase">Literasi Membaca</h3>
@@ -305,7 +305,7 @@ include __DIR__ . '/../components/head.php';
         <div class="inline-block px-3 py-1 bg-sticker-green text-deep-black border-2 border-deep-black font-label-stamp text-[10px] uppercase mb-4 shadow-[2px_2px_0px_0px_#000101]">
           Menerima Buku Bekas Layak Baca
         </div>
-        <a class="block w-full text-center bg-primary text-on-primary font-handwriting text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="donasi">
+        <a class="block w-full text-center bg-cream-terang text-on-primary font-handwriting text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="donasi">
           [ PANDUAN DONASI &amp; RELAWAN &rarr; ]
         </a>
       </div>

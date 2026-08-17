@@ -27,7 +27,7 @@
       <div class="space-y-4">
         <h4 class="font-label-stamp text-deep-black uppercase tracking-tighter">Kemitraan</h4>
         <div class="flex flex-col gap-3 font-label-mono text-[14px] text-deep-black">
-          <span>SDN 3 &amp; IAR Partnership</span>
+          <span>SDN 3 Air Kubang &amp; Yayasan IAR Indonesia Partnership</span>
           <span>#TetanggaBaca</span>
         </div>
       </div>

@@ -1,7 +1,8 @@
 # Design System & UI/UX Specification (DESIGN.md)
 ## Project: Taman Bacaan Masyarakat (TBM) Jalosi Sanak Negeri Website
 ### Visual Identity: Inspired by Toko Kopi TUKU (tuku.coffee) — "Tetangga Baca & Lo-Fi Craft"
-### Architecture: Multi-Page Aggregator & Modular Pages
+### Architecture: Multi-Page Modular (PHP + Shared Components) — 7 Halaman Publik
+### Sumber Kode: `components/head.php` (Tailwind config inline) & `assets/js/tailwind-config.js`
 
 ---
 
@@ -13,99 +14,92 @@ Mengadaptasi DNA visual dan filosofi branding khas **Toko Kopi TUKU** (*tuku.cof
 2. **Semangat Guyub & Kedekatan (*Neighborhood Spirit*):**
    * Mengadopsi konsep sapaan akrab *"Tetangga TUKU"* menjadi **"#TetanggaBaca"** dan **"#SanakNegeri"** untuk menyapa siswa SDN 3 Air Kubang, orang tua, relawan, dan donatur.
 3. **Estetika Kraft, Labeling & Stiker Kurasi:**
-   * Kartu katalog buku, kartu program, dan pengumuman dirancang seperti kemasan kopi/kertas pembungkus TUKU: garis batas tegas (*crisp border*), label monospaced/caps, stempel tanggal pendirian ("EST. 17 JULI 2015"), dan stiker kurasi warna kontras.
+   * Kartu katalog buku, kartu program, dan pengumuman dirancang seperti kemasan kopi/kertas pembungkus TUKU: garis batas tegas (*crisp border* `border-2 border-deep-black`), label monospaced/caps, stempel tanggal pendirian ("EST. 17 JULI 2015"), stiker kurasi warna kontras, dan *hard shadow* brutalist (`shadow-[4px_4px_0px_0px_#000101]`).
 
 ---
 
-### 2. Palet Warna (TUKU Warm Craft & Coffee-Paper Tones)
+### 2. Palet Warna Resmi (Final — Implemented)
 
-```css
-:root {
-  /* Canvas & Paper Backgrounds (Nuansa Kertas Kraft, Gelas Kopi, & Dinding Kedai) */
-  --tuku-bg-main:       #F7F3ED; /* Warm Kraft Paper Background */
-  --tuku-bg-surface:    #FFFFFF; /* Pure White Card Canvas */
-  --tuku-bg-kraft:      #EFE8DC; /* Muted Kraft Section Fill */
-  --tuku-bg-sand:       #E5DDCF; /* Subtle Container Tint */
-  
-  /* Primary & Text Dark Tones (Espresso Deep Charcoal & Warm Brown) */
-  --tuku-espresso-950:  #1E1A18; /* Bold Headers & Dominant Text */
-  --tuku-espresso-900:  #2B2523; /* Primary Action Buttons & Borders */
-  --tuku-espresso-800:  #3D3532; /* Secondary Text */
-  --tuku-espresso-600:  #6E625D; /* Muted Captions & Sub-labels */
-  --tuku-border:        #2B2523; /* Crisp 1px Border */
+Seluruh warna direpresentasikan sebagai **token Tailwind** (bukan hardcode hex). Konfigurasi aktif: inline di `components/head.php`.
 
-  /* Accent & Highlight Stickers (Warna Stiker Ikonik TUKU: Cokelat Hangat, Kuning Gula Aren, Merah Bata) */
-  --tuku-aren-amber:    #D97706; /* Gula Aren Gold (Highlight & Rating) */
-  --tuku-aren-light:    #FEF3C7; /* Soft Aren Badge Fill */
-  --tuku-sticker-red:   #C2410C; /* Terracotta Red / Stamp Accent */
-  --tuku-sticker-green: #15803D; /* Forest Green (Konservasi x Mitra Yayasan IAR) */
-  --tuku-sticker-blue:  #1D4ED8; /* Digital / Komputer Class Badge */
-  --tuku-oren:          #B66445; /* Oren (Warna Aksen - docs/COLOR.txt) */
+| Token Tailwind | Hex | Penggunaan Utama |
+| :--- | :--- | :--- |
+| `cream-terang` | `#f4e0c0` | Default bg section (Kata Pendiri, Donasi, Visi & Misi, Liputan Media; juga bg section Katalog Perpustakaan via `primary-fixed`) |
+| `primary` (`cream`) | `#C1AF91` | Badge/stempel, tombol CTA, aksen label; dasar warna "cream gelap" |
+| `sticker-green` (`hijau-stabilo`) | `#BBD65F` | Stiker label & kurasi kontras |
+| `footer-bg` (`putih`) | `#FEFFFE` | Background header mobile & footer |
+| `header-bg` (`abu-gelap`) | `#4B4B4A` | Navbar desktop (`bg-deep-black` di atasnya untuk teks terang) |
+| `oren` (`oren-gelap`) | `#B66746` | Hover menu navbar (`hover:text-oren`) |
+| `oren-terang` | `#E9922D` | bg section saat hover card konten (`has-[.konten-card:hover]:bg-oren-terang`) |
+| `deep-black` (`hitam`) | `#000101` | Teks utama, border tegas, *hard shadow* |
+| `kuning-emas` | `#D3AE3F` | Aksen kuning |
 
-  /* Header & Footer (Navbar & Kaki Halaman) */
-  --tuku-header-bg:     #4B4B4A; /* Header Navbar Background */
-  --tuku-header-text:   #FEFFFE; /* Header Navbar Text */
-  --tuku-footer-bg:     #FEFFFE; /* Footer Background */
-  --tuku-footer-text:   #000101; /* Footer Text */
-}
-```
+> **Aturan penggunaan:**
+> - Gunakan **class token** (mis. `bg-cream-terang`), JANGAN hex mentah (mis. `bg-[#f4e0c0]`).
+> - `cream-gelap` **tidak lagi dipakai** sebagai class; nilai `#C1AF91` diwakili token `primary`.
+> - Token Material turunan tetap tersedia: `surface` `#f8faf9`, `surface-variant` `#e1e3e2`, `surface-container` `#edeeed`, `primary-container` `#c1af91`, `primary-fixed` `#f4e0c0`, `outline` `#7d766c`, `outline-variant` `#cfc5b9`.
 
-#### Tailwind Class Mapping:
-* **Background Utama:** `bg-[#F7F3ED]` (Canvas dasar halaman).
-* **Kontainer / Kartu:** `bg-white border border-[#2B2523] shadow-[2px_2px_0px_0px_#2B2523]` (Gaya retro border Tuku).
-* **Tombol Utama (CTA):** `bg-[#2B2523] text-[#F7F3ED] hover:bg-[#1E1A18] px-6 py-3 font-bold uppercase tracking-wider text-sm rounded-lg`.
-* **Tombol Sekunder (Kraft):** `bg-[#EFE8DC] text-[#2B2523] border border-[#2B2523] hover:bg-[#E5DDCF] px-6 py-3 font-semibold rounded-lg`.
-* **Badge / Stiker:** `bg-[#FEF3C7] text-[#92400E] border border-[#D97706] text-xs font-mono font-bold uppercase px-2.5 py-0.5 rounded-full`.
+#### Efek Interaksi Section (Hover Background)
+- Section dengan `bg-cream-terang` berubah ke **`bg-oren-terang`** hanya ketika kursor berada di **card konten** (`.konten-card`), bukan saat hover area section kosong.
+- Implementasi via CSS `:has()`: `class="... bg-cream-terang transition-colors has-[.konten-card:hover]:bg-oren-terang"`.
+- Berlaku di 4 section: **Kata Pendiri** & **Donasi** (beranda), **Visi & Misi** & **Liputan Media** (tentang).
 
 ---
 
 ### 3. Tipografi: TUKU Sub Head + Handwriting
 
-> Detail analisa & pemetaan font dari referensi: **`docs/design-tukucoffee.md`**.
+Font di-self-host di `assets/fonts/` (`tuku-sub-head.otf`, `tuku-handwriting.woff`) dengan `@font-face` di `assets/css/fonts.css` (fallback `Arial` + metric override dari referensi).
 
 * **Font Default (Semua Teks & Body):** `__tuku_sub_head_6d0d6c` (Fallback: `__tuku_sub_head_Fallback_6d0d6c`) — Weight `400`.
-* **Font Display / Handwriting (eksplisit):** `__tuku_handwriting_c420db` (Fallback: `__tuku_handwriting_Fallback_c420db`) — Style `normal`, Weight `400`, Color `rgb(0, 0, 0)`.
-* **Cara pakai (mengikuti referensi tuku.coffee):** `sub_head` = default seluruh halaman; **`handwriting` di-apply eksplisit** ke heading, badge, menu navbar & tombol.
+* **Font Display / Handwriting (eksplisit):** `__tuku_handwriting_c420db` (Fallback: `__tuku_handwriting_Fallback_c420db`) — Style `normal`, Weight `400`.
 
-| Level | Font | Ukuran | Weight | Tracking & Transform | Kegunaan |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Display H1** (`font-headline-lg`) | Handwriting | 30px | 400 | -0.02em | Hero Section Headline |
-| **Section H2** (`font-headline-md`) | Handwriting | 28px | 400 | Uppercase, +0.02em | Judul Bagian |
-| **Card H3** (`font-headline-sm`) | Handwriting | 18px | 400 | Normal | Judul Buku / Program |
-| **Label Stamp** (`font-label-stamp`) | Handwriting | 12px | 400 | Uppercase, +0.05em | Badge, Kategori, Est. |
-| **Nav & Tombol** (`font-handwriting`) | Handwriting | `text-label-mono` dst. | 400 | Uppercase | Menu navbar, CTA |
-| **Body Regular** (`font-body-lg`) | Sub Head | 16px | 400 | Normal | Narasi & Deskripsi |
-| **Meta / Label** (`font-label-mono`) | Sub Head | 13px | 400 | Normal | Info kecil, footer, meta |
-
-Font di-self-host di `assets/fonts/` (`tuku-sub-head.otf`, `tuku-handwriting.woff`) dengan `@font-face` di `assets/css/fonts.css` (fallback `Arial` + metric override dari referensi).
+| Level | Font | Ukuran | Tracking & Transform | Kegunaan |
+| :--- | :--- | :--- | :--- | :--- |
+| **Display H1** (`font-headline-lg` / `headline-lg-mobile`) | Handwriting | 30px | -0.02em, Uppercase | Hero Section Headline |
+| **Section H2** (`font-headline-md`) | Handwriting | 28px | Uppercase, +0.02em | Judul Bagian |
+| **Card H3** (`font-headline-sm`) | Handwriting | 18px | Normal | Judul Buku / Program |
+| **Label Stamp** (`font-label-stamp`) | Handwriting | 12px | Uppercase, +0.05em | Badge, Kategori, Est. |
+| **Nav & Tombol** (`font-handwriting`) | Handwriting | `text-label-mono` dst. | Uppercase | Menu navbar, CTA |
+| **Body Regular** (`font-body-lg`) | Sub Head | 16px | Normal | Narasi & Deskripsi |
+| **Meta / Label** (`font-label-mono`) | Sub Head | 13px | Normal | Info kecil, footer, meta |
 
 ---
 
 ### 4. Struktur Komponen Multi-Halaman & Aturan Tampilan
 
-#### A. Top Bar & Navigasi ("Kedai Baca")
-* **Style:** Latar header navbar desktop **`#000101`** (`bg-deep-black`) dengan teks **`#FEFFFE`** (`text-footer-bg`) dan garis pembatas `border-b border-deep-black`.
-* **Responsif (Mobile):** Saat tampilan mobile (`< lg`), latar navbar berubah **putih `#FEFFFE`** (`bg-putih`) dan teks berubah **hitam `#000101`** (`text-deep-black`). Judul website tetap tampil di semua ukuran layar. Menu mobile tampil sebagai **overlay full-screen** (fixed, menutupi seluruh layar) dengan menu teks besar di tengah, dan bisa ditutup lewat tombol X di navbar.
-* **Logo TBM:** Tipografi bold bergaya cap TUKU: **Taman Baca Jalosi** dengan sub-teks monospace `Sanak Negeri • Est. 2015`.
-* **Menu Navigasi:** `Beranda`, `Tentang`, `Program & Jadwal`, `Katalog Buku`, `Pojok Karya`, `Donasi & Relawan`, `Kontak`.
-* **Action:** Badge lokasi `📍 AIR NANINGAN (120m DARI SDN 3)` + Tombol CTA `Sapa Pengelola (WA)`.
+Arsitektur PHP dengan komponen bersama: `components/head.php`, `header.php`, `section-header.php`, `btn-primary.php`, `footer.php`. Halaman publik: `landing/{index,tentang,program,katalog,pojok-karya,donasi,kontak}.php` dengan slug `./ , tentang, program, katalog, pojok-karya, donasi, kontak`.
 
-#### B. Beranda (`index.html`) — Aggregator Teaser
-* **Hero Section:** Headline guyub, sub-headline, stempel `[ EST. 17 JULI 2015 ]`, dan 4 metrik barcode (1.500+ Buku, 2015, 120m dari SDN 3, 4 Program).
-* **Section 4 Program Teaser:** Menampilkan 4 ringkasan kartu program + tombol `[ DETAIL PROGRAM -> ]`.
-* **Section Katalog Teaser:** Menampilkan **maksimal 4 buku sorotan** + tombol `[ BUKA KATALOG LENGKAP (1.500+ BUKU) -> ]`.
-* **Section Sejarah Teaser:** 1 paragraf kisah Bpk. Tamar Widadi + Visi + tombol `[ BACA SEJARAH LENGKAP -> ]`.
-* **Section Karya Teaser:** Menampilkan **3-4 foto/karya anak pilihan** + tombol `[ LIHAT SEMUA KARYA & GALERI -> ]`.
-* **Section Donasi Teaser:** Kotak resi ringkas + tombol `[ PANDUAN DONASI & RELAWAN -> ]`.
+#### A. Top Bar & Navigasi
+* **Style:** Desktop: latar **hitam `#000101`** (`lg:bg-deep-black`), teks **putih `#FEFFFE`** (`text-footer-bg`), hover menu **`text-oren`**, item aktif diberi `underline`. Mobile (`< lg`): latar **putih `#FEFFFE`** (`bg-putih`), teks hitam.
+* **Logo:** Gambar lokal `assets/images/logo-jalosi.png` (`h-14 w-auto`) + brand text handwriting **"Jalosi Sanak Negeri"** uppercase.
+* **Menu Navigasi:** `Beranda`, `Tentang Kami`, `Program`, `Katalog`, `Pojok Karya`, `Donasi`, `Kontak`.
+* **Mobile:** Menu overlay **full-screen** (fixed, `bg-putih`, teks besar di tengah) dengan tombol hamburger ↔ close (ikon `menu`/`close` Material Symbols).
+
+#### B. Beranda (`landing/index.php`) — Aggregator Teaser
+* **Hero:** Background foto lokal `assets/images/hero-beranda.png` dengan overlay krem + grid dekoratif. Kiri: headline handwriting, sub-headline, stempel `[ EST. 17 JULI 2015 ]`, CTA `bg-cream-terang`. Kanan: kartu **FAKTA CEPAT** bergaya barcode (Koleksi Buku 1.500+, Berdiri Sejak 2015, Lokasi ±120m dr SDN 3 Air Kubang, Program Aktif 4 Pilar).
+* **Kata Pendiri** (`bg-cream-terang`, hover `has-[.konten-card:hover]:bg-oren-terang`): 2 kartu kisah pendiri + aksi.
+* **Liputan Media teaser** ("Pernah Diliput Media"): 2 kartu tautan berita (Radio Idola 92.6 FM 2023 & Lampung Geh News 2026).
+* **4 Pilar Program** (teaser): 4 kartu program + CTA.
+* **Sorotan Koleksi**: kartu buku pilihan + CTA buka katalog.
+* **Donasi** (`bg-cream-terang`, hover card): "Kirim Buku, Kirim Harapan" + kartu resi + CTA.
 
 #### C. Halaman Khusus Modul (Full Data)
-* **Halaman Tentang (`tentang.html`):** Narasi komprehensif pendirian sejak 2015, profil Bpk. Tamar Widadi, S.Pd., Visi & 3 Misi resmi.
-* **Halaman Program (`program.html`):** Rincian kurikulum 4 program (Membaca, Komputer IAR, Seni Tari, Konservasi). *(Section Jadwal & Daftar dihapus.)*
-* **Halaman Katalog (`katalog.html`):** Database koleksi penuh tanpa batas, Live Search Bar, filter multi-kategori, kode rak, dan status ketersediaan.
-* **Halaman Karya & Galeri (`karya.html`):** Galeri foto penuh, karya tulisan/gambar anak-anak SDN 3 Air Kubang, dan ulasan komunitas.
-* **Halaman Donasi & Relawan (`donasi-relawan.html`):** Panduan spesifik kirim buku ke Tanggamus, copy-to-clipboard alamat paket, dan form relawan.
-* **Halaman Kontak (`kontak.html`):** Peta rute detail dari SDN 3 Air Kubang, jam buka harian, FAQ, dan WhatsApp langsung.
+* **Tentang (`tentang`):** Kisah pendiri, **Visi & Misi** (`bg-cream-terang` + hover card), **Impact & Timeline** (SVG 1.5K+), **Liputan Media** (`bg-cream-terang` + hover card, 2 kartu berita).
+* **Program (`program`):** Rincian kurikulum 4 program (Membaca, Komputer IAR, Seni Tari, Konservasi).
+* **Katalog (`katalog`):** Header `bg-primary-fixed` (#f4e0c0), Live Search Bar, filter multi-kategori, kode rak, status ketersediaan, tombol Cari `bg-primary`.
+* **Pojok Karya (`pojok-karya`):** Galeri foto/karya + CTA `bg-primary`.
+* **Donasi (`donasi`):** Panduan kirim buku, copy-to-clipboard alamat, form relawan.
+* **Kontak (`kontak`):** Peta rute, jam operasional, FAQ (`<details>` `open:bg-primary-container`), kontak WA/email.
 
 #### D. Footer ("Salam Hangat dari Air Naningan")
-* Latar **`#FEFFFE`** (`bg-footer-bg`) dengan teks **`#000101`** (`text-deep-black`).
-* Menampilkan informasi jam operasional, kemitraan resmi (SDN 3 Air Kubang & Yayasan IAR Indonesia), alamat presisi, dan tautan halaman.
+* Latar **`#FEFFFE`** (`bg-footer-bg`), border atas `border-t-2 border-deep-black`, teks **`#000101`**.
+* **4 kolom ala Toko Kopi TUKU:** pojok kiri (Hubungi Kami + tombol share `sharePage()`), tengah kiri (Jam Operasional), tengah kanan (Kemitraan: "SDN 3 Air Kubang & Yayasan IAR Indonesia Partnership", "#TetanggaBaca"), pojok kanan (**card WA & email gaya TUKU** — nomor/alamat di atas + label bawah, link `wa.me/6281234567890` & `mailto:info@jalosisanak.org`, hover invert warna).
+* **Baris bawah:** `Privasi / Ketentuan / © [tahun]` kecil, rata kiri, ukuran sama dengan konten di atas (`font-label-mono text-[14px] uppercase`).
+
+---
+
+### 5. Aturan Wajib Pengembangan (Design Tokens)
+1. **Warna:** Selalu pakai token Tailwind; daftar final di `docs/COLOR.txt`.
+2. **Border & Shadow:** `border-2 border-deep-black` + `shadow-[4px_4px_0px_0px_#000101]` (brutalist flat shadow).
+3. **Hover section:** Pakai pola `has-[.konten-card:hover]:bg-oren-terang` + class `konten-card` di kartu konten.
+4. **Logo & aset:** Simpan lokal di `assets/images/` (jangan referensikan URL eksternal yang mudah cache/expiry).

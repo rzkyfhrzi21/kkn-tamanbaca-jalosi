@@ -1,9 +1,16 @@
-cream-gelap #C1AF91
-cream-terang #f4e0c0
-Hijau stabilo #BBD65F
-Putih #FEFFFE
-Abu Gelap #4B4B4A
-oren gelap #B66746
-oren terang #E9922D
-hitam #000101
-kuning emas #D3AE3F
+Palet Warna Resmi — Taman Baca Jalosi Sanak Negeri (hasil final website)
+
+cream terang #f4e0c0   (bg-cream-terang — default bg section & Katalog Perpustakaan)
+cream / primary #C1AF91 (bg-primary — badge, tombol CTA, stempel, aksen)
+Hijau stabilo #BBD65F  (sticker-green — stiker label & kurasi)
+Putih #FEFFFE         (footer-bg / putih — background header mobile & footer)
+Abu Gelap #4B4B4A     (header-bg — background navbar desktop)
+oren gelap #B66746     (oren — aksen hover menu)
+oren terang #E9922D    (oren-terang — bg section saat hover card konten)
+hitam #000101         (deep-black — teks utama, border tegas, shadow)
+kuning emas #D3AE3F    (kuning-emas — aksen kuning)
+
+Catatan:
+- Nama class = token Tailwind. Gunakan class (mis. bg-cream-terang),
+  JANGAN hardcode hex (mis. bg-[#f4e0c0]).
+- cream-gelap TIDAK digunakan lagi; warna #C1AF91 diwakili token `primary`.

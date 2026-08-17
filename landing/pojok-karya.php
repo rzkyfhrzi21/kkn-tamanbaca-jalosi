@@ -85,7 +85,7 @@ include __DIR__ . '/../components/head.php';
 <div class="flex flex-col gap-6">
 <h2 class="font-headline-lg text-surface uppercase">Kirimkan Karya<br/>Terbaikmu</h2>
 <p class="font-body-lg text-surface-variant max-w-md">Punya cerita, puisi, atau gambar yang ingin dibagikan? Kami selalu menanti karya-karya baru untuk dipajang di pojok ini.</p>
-<button class="bg-primary hover:bg-surface-tint text-on-primary font-handwriting uppercase px-8 py-4 w-max border-2 border-deep-black shadow-[4px_4px_0px_0px_#f8faf9] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-[0px_0px_0px_0px_#f8faf9]">
+<button class="bg-cream-terang hover:bg-surface-tint text-on-primary font-handwriting uppercase px-8 py-4 w-max border-2 border-deep-black shadow-[4px_4px_0px_0px_#f8faf9] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-[0px_0px_0px_0px_#f8faf9]">
                 Kirim Karya Sekarang
             </button>
 </div>

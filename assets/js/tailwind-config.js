@@ -73,7 +73,6 @@ tailwind.config = {
         "oren-gelap": "#B66746",
         "oren-terang": "#E9922D",
         "kuning-emas": "#D3AE3F",
-        "cream-gelap": "#C1AF91",
         "cream-terang": "#f4e0c0",
       },
       borderRadius: {

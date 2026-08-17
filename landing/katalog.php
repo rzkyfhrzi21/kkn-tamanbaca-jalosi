@@ -28,7 +28,7 @@ include __DIR__ . '/../components/head.php';
 <div class="flex items-center bg-surface-container-lowest border-2 border-deep-black shadow-[4px_4px_0px_0px_#000101] group-focus-within:translate-x-[2px] group-focus-within:translate-y-[2px] group-focus-within:shadow-[2px_2px_0px_0px_#000101] transition-all">
 <span class="material-symbols-outlined text-deep-black px-4">search</span>
 <input class="w-full bg-transparent py-4 pr-4 font-body-lg text-deep-black outline-none placeholder:text-on-surface-variant/50" id="search-book" placeholder="Judul, Penulis, ISBN..." type="text"/>
-<button class="bg-primary text-on-primary px-6 py-4 border-l-2 border-deep-black font-handwriting uppercase hover:bg-surface-tint transition-colors">Cari</button>
+<button class="bg-cream-terang text-on-primary px-6 py-4 border-l-2 border-deep-black font-handwriting uppercase hover:bg-surface-tint transition-colors">Cari</button>
 </div>
 </div>
 </div>
@@ -91,7 +91,7 @@ include __DIR__ . '/../components/head.php';
 <span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Lokasi Rak</span>
 <span class="font-label-stamp text-lg text-deep-black mt-1">A1-02</span>
 </div>
-<button class="w-8 h-8 flex items-center justify-center bg-surface-container-lowest border-2 border-deep-black hover:bg-primary hover:text-on-primary transition-colors">
+<button class="w-8 h-8 flex items-center justify-center bg-surface-container-lowest border-2 border-deep-black hover:bg-cream-terang hover:text-on-primary transition-colors">
 <span class="material-symbols-outlined text-sm">bookmark_add</span>
 </button>
 </div>
@@ -131,7 +131,7 @@ include __DIR__ . '/../components/head.php';
 <span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Lokasi Rak</span>
 <span class="font-label-stamp text-lg text-deep-black mt-1">B1-05</span>
 </div>
-<button class="w-8 h-8 flex items-center justify-center bg-surface-container-lowest border-2 border-deep-black hover:bg-primary hover:text-on-primary transition-colors">
+<button class="w-8 h-8 flex items-center justify-center bg-surface-container-lowest border-2 border-deep-black hover:bg-cream-terang hover:text-on-primary transition-colors">
 <span class="material-symbols-outlined text-sm">bookmark_add</span>
 </button>
 </div>
@@ -152,7 +152,7 @@ include __DIR__ . '/../components/head.php';
 <span class="font-label-mono text-[10px] text-on-surface-variant uppercase">Lokasi Rak</span>
 <span class="font-label-stamp text-lg text-deep-black mt-1">H2-11</span>
 </div>
-<button class="w-8 h-8 flex items-center justify-center bg-surface-container-lowest border-2 border-deep-black hover:bg-primary hover:text-on-primary transition-colors">
+<button class="w-8 h-8 flex items-center justify-center bg-surface-container-lowest border-2 border-deep-black hover:bg-cream-terang hover:text-on-primary transition-colors">
 <span class="material-symbols-outlined text-sm">bookmark_add</span>
 </button>
 </div>
