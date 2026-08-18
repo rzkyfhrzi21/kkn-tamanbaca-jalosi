@@ -216,7 +216,7 @@ include __DIR__ . '/../components/head.php';
     <div class="mt-12 flex justify-center">
       <?php
       $btn_href = 'program';
-      $btn_text = '[ DETAIL PROGRAM &rarr; ]';
+      $btn_text = '[ DETAIL PROGRAM ]';
       include __DIR__ . '/../components/btn-primary.php';
       ?>
     </div>
@@ -271,7 +271,7 @@ include __DIR__ . '/../components/head.php';
     <div class="mt-12 flex justify-center border-t-2 border-deep-black/10 pt-12">
       <?php
       $btn_href = 'katalog';
-      $btn_text = '[ BUKA KATALOG LENGKAP (1.500+ BUKU) &rarr; ]';
+      $btn_text = '[ BUKA KATALOG LENGKAP (1.500+ BUKU) ]';
       include __DIR__ . '/../components/btn-primary.php';
       ?>
     </div>
@@ -305,8 +305,8 @@ include __DIR__ . '/../components/head.php';
         <div class="inline-block px-3 py-1 bg-sticker-green text-deep-black border-2 border-deep-black font-label-stamp text-[10px] uppercase mb-4 shadow-[2px_2px_0px_0px_#000101]">
           Menerima Buku Bekas Layak Baca
         </div>
-        <a class="block w-full text-center bg-cream-terang text-on-primary font-handwriting text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="donasi">
-          [ PANDUAN DONASI &amp; RELAWAN &rarr; ]
+        <a class="inline-flex items-center justify-center gap-2 w-full text-center bg-cream-terang text-on-primary font-handwriting text-label-mono px-6 py-3 uppercase tracking-wider shadow-[4px_4px_0px_0px_#000101] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_#000101] transition-all" href="donasi">
+          [ PANDUAN DONASI &amp; RELAWAN ]<span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
         </a>
       </div>
     </div>

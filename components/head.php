@@ -58,6 +58,7 @@ $og_image_alt  = 'Suasana hangat Taman Baca Jalosi Sanak Negeri, Pekon Air Kuban
 <meta name="twitter:title" content="<?= htmlspecialchars($seo_title) ?>"/>
 <meta name="twitter:description" content="<?= htmlspecialchars($page_desc) ?>"/>
 <meta name="twitter:image" content="<?= htmlspecialchars($og_image) ?>"/>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo-jalosi.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo-jalosi.png"/>
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo-jalosi.png"/>
